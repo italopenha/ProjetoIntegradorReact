@@ -1,34 +1,120 @@
-.toolbar {
-    background-color: #406343;
-    height: 10vh;
-    justify-content: space-between;
+* {
+    /* responsavel por todo site*/
+    margin: 0;
+    padding: 0;
 }
 
-.cursor {
-    cursor: pointer;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    margin-left: 500px;
-
-}
-
-
-.txtMenu {
-    font-family: sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    padding-right: 30px;
+a {
 
     color: #ECE7B4;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s; /* responsavel pelo tempo que os elementos da nav mudam de cor  */
 }
 
-.txtMenu:hover {
-    opacity: 0.5; 
+a:hover {
+    opacity: 0.5; /* responsavel pela opacidade dessa mudança de cor*/
 }
+
+.nav-logo{
+    width: 175px /* tamanho da logo */
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #406343;
+    height: 10vh; /* responsavel pela altura e reponsavidade da tela do usuario*/
+}
+
+.nav-list{
+    margin-left: 500px;
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 30px;
+}
+
+.nav-list img {
+    margin-top: -8px;
+    width: 40px;
+    background-color: #ECE7B4;
+    border-radius: 50%;
+    
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #ECE7B4;
+    margin: 7px;
+    transition: 0.5s;
+
+}
+
+@media (max-width: 999px){ /* quando a tela for menor que esse tamanho, vai aparecer o menu mobile*/
+    body{
+        overflow-x: hidden; /*se algo transborda, fica escondido do body */
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 45vh;
+        background-color: #406343;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        transform: translateX(100%); /* navegação para fora da tela, */
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0); /* quando mobile menu estiver ativo, voltar a 0 */
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+

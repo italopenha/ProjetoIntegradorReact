@@ -1,45 +1,40 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { Box } from '@mui/material'
 import './Navbar.css'
 
 function Navbar() {
     return (
         <>
-            <AppBar position="static">
-                <Toolbar className='toolbar' >
-                    <Box className='cursor' >
-                        <img src="https://i.imgur.com/uLG82dK.png" alt="" width="275px" />
-                    </Box>
+            <header>
+                <nav>
+                    <img className="nav-logo" src="https://i.imgur.com/FyqHkFH.png" alt="Imagem Tela Inicial"/>
+                        <div className="mobile-menu">
+                            <div className="line1"></div>
+                            <div className="line2"></div>
+                            <div className="line3"></div>
+                        </div>
+                        <ul className="nav-list">
+                            <li>
+                                <a href="/">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="/">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="/">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="/">Contato</a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <img src="https://i.imgur.com/rBljdCZ.png" alt=""/>
+                                </ a>    
+                            </li>
+                        </ul>
+                </nav>
+            </header>
 
-                    <Box className='menu' >
-                        <Box mx={1} className='cursor' >
-                            <Typography className='txtMenu'>
-                                Home
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor' >
-                            <Typography className='txtMenu' >
-                                Sobre Nós
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor' >
-                            <Typography className='txtMenu' >
-                                Produtos
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor' >
-                            <Typography className='txtMenu' >
-                                Contato
-                            </Typography>         
-                        </Box>
-                        
-                        <Box borderRadius="50%" marginLeft="20px" className='cursor' >
-                            <img src="https://i.imgur.com/rBljdCZ.png" alt="" width="40px" />
-                        </Box>
-                    </Box>
-                </Toolbar>
-            </AppBar>
+            <script src="assets/index.js"></script>
 
         </>
     )

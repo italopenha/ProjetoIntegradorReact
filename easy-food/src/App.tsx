@@ -8,20 +8,7 @@ function App() {
   return (
     <Router>
     <Navbar />
-    <Routes>
-
-      <Route path="/home" element={<Home />} />
-
-      <Route path="/sobrenos" element={<SobreNos />} />
-
-      <Route path="/produtos" element={<Produtos />} />
-
-      <Route path="/contato" element={<Contato />} />
-
-      <Route path="/login" element={<Login />} />
-
-      <Route path="/cadastrousuario" element={<CadastroUsuario/>} />
-    </Routes>
+    
     <Footer 
     
     />
