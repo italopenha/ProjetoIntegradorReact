@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
 
 #footer_principal {
     width: 100%;
@@ -7,17 +7,17 @@
     background-color: #406343;
 }
 
-#footer_principal header{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
 #footer_principal section {
     width: 100%;
     display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
 }
 
 #footer_principal footer {
@@ -25,11 +25,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-article h2,p, h5, ul {
-    color: #F3EFCC;
-    font-family: 'Open Sans', sans-serif;
+#menu li{
+    display: flex;
+}
+
+#menu li a{
+    color:#ECE7B4;
+    font-family:'Poppins', sans-serif;
+}
+
+#menu li a:hover{
+    color: #284a0b;
+    font-family:'Poppins', sans-serif;
+}
+
+article h2, p, h5, ul {
+    color:#ECE7B4;
+    font-family:'Poppins', sans-serif;
 }
 
 section article {
