@@ -22,7 +22,9 @@ function App() {
 
       <Route path="/cadastrousuario" element={<CadastroUsuario/>} />
     </Routes>
-    <Footer />
+    <Footer 
+    
+    />
   </Router>
   );
 }
