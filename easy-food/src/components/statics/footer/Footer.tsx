@@ -20,10 +20,10 @@ function Footer() {
                         <h2>LINKS ÚTEIS</h2>
                         <ul id= 'menu'>
                             <li>
-                                <a href="/home">Inicio</a>
+                                <a href="/home">Home</a>
                             </li>
                             <li>
-                                <a href="/about">Sobre</a>
+                                <a href="/sobrenos">Sobre</a>
                             </li>
                             <li>
                                 <a href="/products">Produtos</a>
