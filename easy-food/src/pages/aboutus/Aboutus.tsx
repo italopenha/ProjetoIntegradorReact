@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material'
-import './Aboutus.css';
+import './AboutUs.css';
 
-function Aboutus() {
+function AboutUs() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='fundo'>
@@ -34,4 +34,4 @@ function Aboutus() {
 
 }
 
-export default Aboutus;
+export default AboutUs;
