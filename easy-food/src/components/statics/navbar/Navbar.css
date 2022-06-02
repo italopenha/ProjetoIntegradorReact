@@ -5,7 +5,7 @@
 }
 
 a {
-
+    display: flex;
     color: #ECE7B4;
     text-decoration: none;
     transition: 0.5s; /* responsavel pelo tempo que os elementos da nav mudam de cor  */
@@ -16,9 +16,10 @@ a:hover {
 }
 
 .nav-logo{
+    display: flex;
     width: 175px; /* tamanho da logo */
     margin-top: 10px;
-    margin-left: -25px;
+    margin-left: -5px;
 }
 
 
@@ -31,6 +32,7 @@ nav{
 }
 
 .nav-list{
+    display: flex;
     margin-right: 20px;
     list-style: none;
     display: flex;
@@ -38,18 +40,20 @@ nav{
 }
 
 .nav-list li {
+    display: flex;
     letter-spacing: 3px;
     margin-left: 30px;
 }
 
 .nav-list img {
+    display: flex;
     margin-top: -8px;
     width: 40px;
     background-color: #ECE7B4;
     border-radius: 50%;
     
 }
-
+/*
 .mobile-menu {
     display: none;
     cursor: pointer;
@@ -65,9 +69,10 @@ nav{
 
 }
 
-@media (max-width: 999px){ /* quando a tela for menor que esse tamanho, vai aparecer o menu mobile*/
+/*
+@media (max-width: 999px){
     body{
-        overflow-x: hidden; /*se algo transborda, fica escondido do body */
+        overflow-x: hidden; 
     }
     .nav-list{
         position: absolute;
@@ -79,7 +84,7 @@ nav{
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        transform: translateX(100%); /* navegação para fora da tela, */
+        transform: translateX(100%); 
         transition: transform 0.3s ease-in;
     }
     .nav-list li{
@@ -94,7 +99,7 @@ nav{
 }
 
 .nav-list.active {
-    transform: translateX(0); /* quando mobile menu estiver ativo, voltar a 0 */
+    transform: translateX(0);
   }
   
   @keyframes navLinkFade {
@@ -118,5 +123,28 @@ nav{
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-  }
+  } */
 
+@media (max-width: 999px) {
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 30px;
+
+    }
+    
+    .nav-list img {
+        display: flex;
+        width: 55px;
+        height: 55px;
+        margin-top: -80px;
+        margin-left: 120px;
+    }
+
+    .nav-logo{
+
+        margin-top: 25px;
+        margin-left: 5px;
+    }
+}

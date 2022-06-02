@@ -7,11 +7,6 @@ function Navbar() {
             <header>
                 <nav>
                     <img className="nav-logo" src="https://i.imgur.com/FyqHkFH.png" alt="Imagem Tela Inicial"/>
-                        <div className="mobile-menu">
-                            <div className="line1"></div>
-                            <div className="line2"></div>
-                            <div className="line3"></div>
-                        </div>
                         <ul className="nav-list">
                             <li>
                                 <a href="/">Inicio</a>
