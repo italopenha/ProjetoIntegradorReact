@@ -16,7 +16,9 @@ a:hover {
 }
 
 .nav-logo{
-    width: 175px /* tamanho da logo */
+    width: 175px; /* tamanho da logo */
+    margin-top: 10px;
+    margin-left: -25px;
 }
 
 
@@ -29,7 +31,7 @@ nav{
 }
 
 .nav-list{
-    margin-left: 500px;
+    margin-right: 20px;
     list-style: none;
     display: flex;
     margin-top: 15px;

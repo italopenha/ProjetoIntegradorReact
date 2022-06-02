@@ -33,9 +33,6 @@ function Navbar() {
                         </ul>
                 </nav>
             </header>
-
-            <script src="assets/index.js"></script>
-
         </>
     )
 }
