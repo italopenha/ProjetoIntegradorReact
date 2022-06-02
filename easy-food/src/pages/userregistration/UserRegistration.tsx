@@ -35,7 +35,7 @@ function UserRegistration () {
 
     useEffect(() => {
 
-        if(userResult.email === "@"){
+        if(userResult.email?.includes("@")){
             navigate('/login');
         }
 
@@ -62,7 +62,8 @@ function UserRegistration () {
                 await userRegistration(`/api/Users`, userRegisterDTO, setUserResult)
                 alert('Usuario cadastrado com sucesso')
             } catch (error) {
-                alert('Usuario já cadastrado, tente outro email!')
+                alert(error)
+                alert('erro no formulário, tente novamente!')
             }
 
         }else{
