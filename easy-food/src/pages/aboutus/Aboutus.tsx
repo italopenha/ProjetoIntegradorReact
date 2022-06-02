@@ -1,5 +1,6 @@
 import React from 'react';
-import { Grid, Box, Typography, } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
+import { Box } from '@mui/material'
 import './Aboutus.css';
 
 function Aboutus() {
