@@ -26,7 +26,7 @@ function ListProduct() {
         }
     }, [token])
 
-    async function getPost() {
+    async function getProduct() {
         await search("/api/Products/list", setProducts, {
             headers: {
                 'Authorization': token
@@ -36,7 +36,7 @@ function ListProduct() {
 
     useEffect(() => {
 
-        getPost()
+        getProduct()
 
     }, [products.length])
 
@@ -48,7 +48,7 @@ function ListProduct() {
                         <Card variant="outlined">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
-                                    Products
+                                    Produtos
                                 </Typography>
                                 <Typography variant="h5" component="h2">
                                     {product.name}
