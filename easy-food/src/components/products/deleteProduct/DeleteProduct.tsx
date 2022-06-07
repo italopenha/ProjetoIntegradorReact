@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Typography, Button, Card, CardActions, CardContent } from "@material-ui/core"
 import './DeleteProduct.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
-import Product from '../../../model/Product';
-import { buscaId, deleteId } from '../../../servicos/Servicos';
+import NewProductDTO from '../../../models/NewProductDTO';
+import { searchId, deleteId } from '../../../services/Services';
 import { Box } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
@@ -13,7 +12,7 @@ function DeleteProduct() {
 
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const [post, setPosts] = useState<Product>()
+    const [product, setProduct] = useState<NewProductDTO>()
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
       );
@@ -33,7 +32,7 @@ function DeleteProduct() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/api/Product/id/${id}`, setPosts, {
+        searchId(`/api/Product/id/${id}`, setProduct, {
             headers: {
                 'Authorization': token
             }
@@ -63,7 +62,7 @@ function DeleteProduct() {
                                 Deseja deletar o Produto:
                             </Typography>
                             <Typography color="textSecondary" >
-                                {post?.titulo}
+                                {product?.name}
                             </Typography>
                         </Box>
 
