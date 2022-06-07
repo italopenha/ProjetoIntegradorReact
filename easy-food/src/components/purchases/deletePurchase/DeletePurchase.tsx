@@ -4,18 +4,15 @@ import './DeletePurchase.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import { searchId, deleteId } from '../../../services/Services';
 import { Box } from '@mui/material';
-import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
 import NewPurchaseDTO from '../../../models/NewPurchaseDTO';
+import useLocalStorage from "react-use-localstorage";
 
 function DeletePurchase() {
 
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [purchase, setPurchase] = useState<NewPurchaseDTO>()
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-      );
+    const [token, setToken] = useLocalStorage('token');
 
     useEffect(() => {
         if (token == "") {

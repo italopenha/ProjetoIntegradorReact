@@ -5,17 +5,14 @@ import { useNavigate, useParams } from 'react-router-dom';
 import NewProductDTO from '../../../models/NewProductDTO';
 import { searchId, deleteId } from '../../../services/Services';
 import { Box } from '@mui/material';
-import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import useLocalStorage from "react-use-localstorage";
 
 function DeleteProduct() {
 
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [product, setProduct] = useState<NewProductDTO>()
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-      );
+    const [token, setToken] = useLocalStorage('token');
 
     useEffect(() => {
         if (token == "") {

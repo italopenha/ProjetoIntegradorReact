@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import Home from './pages/home/Home';
+import DeletePurchase from './components/purchases/deletePurchase/DeletePurchase';
+import DeleteProduct from './components/products/deleteProduct/DeleteProduct';
 import AboutUs from './pages/aboutus/Aboutus';
 /* import Products from './pages/products/Products'; */
 import Contact from './pages/contact/Contact';
@@ -10,6 +12,8 @@ import Login from './pages/login/Login';
 import UserRegistration from './pages/userregistration/UserRegistration';
 import './App.css';
 import RegisterProducts from './components/products/registerProduct/RegisterProducts';
+import ListProduct from './components/products/listProduct/ListProduct';
+import ListPurchase from './components/purchases/listPurchase/ListPurchase';
 
 function App() {
   return (
@@ -21,17 +25,29 @@ function App() {
 
           <Route path="/home" element={<Home />} />
 
+          <Route path="/login" element={<Login />} />
+
           <Route path="/sobrenos" element={<AboutUs />} />
 
           {/*           <Route path="/produtos" element={<Products />} /> */}
 
           <Route path="/contato" element={<Contact />} />
 
-          <Route path="/login" element={<Login />} />
+          <Route path="/cadastrarusuario" element={<UserRegistration />} />
 
-          <Route path="/cadastrousuario" element={<UserRegistration />} />
+          <Route path="/cadastrarproduto" element={<RegisterProducts />} />
 
-          <Route path="/cadastroproduto" element={<RegisterProducts />} />
+          {/* <Route path="/formularioProduto/:id" element={<RegisterProducts />} /> */}
+
+          <Route path="/deletarpompra/:id" element={<DeletePurchase />} />
+
+          <Route path="/deletarproduto/:id" element={<DeleteProduct />} />
+
+          <Route path="/listaprodutos" element={<ListProduct />} />
+
+          <Route path="/listacompras" element={<ListPurchase />} />
+
+
 
         </Routes>
       </div>

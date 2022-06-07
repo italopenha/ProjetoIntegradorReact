@@ -5,17 +5,14 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import './ListPurchase.css';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
-import { useSelector } from "react-redux";
-import { TokenState } from '../../../store/tokens/tokensReducer';
 import NewPurchaseDTO from '../../../models/NewPurchaseDTO';
+import useLocalStorage from "react-use-localstorage";
 
 function ListPurchase() {
 
     const [purchases, setPurchases] = useState<NewPurchaseDTO[]>([]);
     let navigate = useNavigate();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
+    const [token, setToken] = useLocalStorage('token');
 
     useEffect(() => {
         if (token == "") {
@@ -26,7 +23,7 @@ function ListPurchase() {
     }, [token])
 
     async function getPurchase() {
-        await search("/api/ListPurchase", setPurchases, {
+        await search("/api/Purchases/list", setPurchases, {
             headers: {
                 'Authorization': token
             }
@@ -50,15 +47,15 @@ function ListPurchase() {
                                     Compras
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                    {purchase.emailBuyer}
+                                    {purchase.nameItems}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {purchase.nameItems}
+                                    {purchase.emailBuyer}
                                 </Typography>               
                              </CardContent>
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>                                
-                                    <Link to={`/deletePurchase/${purchase.id}`} className="text-decorator-none">
+                                    <Link to={`/deletePurchase/${purchase.emailBuyer}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
                                                 deletar

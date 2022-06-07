@@ -6,17 +6,15 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import './ListProduct.css';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
-import { useSelector } from "react-redux";
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import useLocalStorage from 'react-use-localstorage';
 
 
 function ListProduct() {
 
     const [products, setProducts] = useState<NewProductDTO[]>([]);
     let navigate = useNavigate();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
+    const [token, setToken] = useLocalStorage('token');
+
 
     useEffect(() => {
         if (token == "") {

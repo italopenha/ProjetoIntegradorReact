@@ -1,20 +1,18 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button } from "@material-ui/core"
 import { useNavigate, useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+
 import { post, put, searchId } from '../../../services/Services';
 import NewProductDTO from '../../../models/NewProductDTO';
 import './RegisterProducts.css';
+import useLocalStorage from 'react-use-localstorage';
 
 
 function RegisterProducts() {
 
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
-        (state) => state.tokens
-    );
+    const [token, setToken] = useLocalStorage('token');
 
     const [product, setProduct] = useState<NewProductDTO>({
         name: '',
@@ -54,6 +52,7 @@ function RegisterProducts() {
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
+        
 
         if (id !== undefined) {
             put(`/api/Products`, product, setProduct, {
@@ -74,7 +73,7 @@ function RegisterProducts() {
     }
 
     function back() {
-        navigate('/produtos')
+        navigate('/listaprodutos')
     }
 
     return (
