@@ -1,6 +1,10 @@
+import UserRegisterDTO from './UserRegisterDTO'
+import NewProductDTO from './NewProductDTO'
+
+
 interface NewPurchaseDTO {
-    emailBuyer?: string| null;
-    nameItems?: string| null;    
+    emailBuyer?: UserRegisterDTO| null;
+    nameItems?: NewProductDTO| null;    
 }
 
 export default NewPurchaseDTO
