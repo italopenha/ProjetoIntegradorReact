@@ -1,4 +1,5 @@
-interface UpdateProductDTO {
+interface UpdateProductDTO 
+{
     id?: number| null;
     name?: string| null;
     price?: number| null; 
@@ -7,6 +8,6 @@ interface UpdateProductDTO {
     quantity?: number| null;
 }
 
-export default UpdateProductDTO
+export default UpdateProductDTO;
 
   
