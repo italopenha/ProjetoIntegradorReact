@@ -50,3 +50,20 @@ article h2, p, h5, ul {
 section article {
     padding: 30px;
 }
+
+@media (max-width: 550px) {
+    article h2 , p, h5, ul {
+        margin-left: -40px;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        margin-top: 275px;
+        margin-left: -25px;
+    }
+    .icons a{
+        margin-left: -125px;
+        align-items: center;
+
+    }
+}

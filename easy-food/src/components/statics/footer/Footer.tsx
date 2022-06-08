@@ -32,11 +32,17 @@ function Footer() {
                                 <a href="/contact">Contato</a>
                             </li>
                             <li>
+                                <a href="/contact">Carrinho</a>
+                            </li>
+                            <li>
                                 <a href="/login" >Login</a>
+                            </li>
+                            <li>
+                                <a href="/login" >Logout</a>
                             </li>
                         </ul>
                     </article>
-                    <article>
+                    <article className='icons'>
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                 <FacebookIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
                             </a>
