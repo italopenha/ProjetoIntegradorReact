@@ -37,7 +37,7 @@ function DeletePurchase() {
     }
 
     function sim() {
-        navigate('/compras')
+        navigate('/listacompras')
         deleteId(`/api/Purchases/delete/${id}`, {
             headers: {
                 'Authorization': token
@@ -47,7 +47,7 @@ function DeletePurchase() {
     }
 
     function nao() {
-        navigate('/compras')
+        navigate('/listacompras')
     }
     return (
         <>

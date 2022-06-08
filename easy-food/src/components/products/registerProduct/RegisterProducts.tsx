@@ -52,7 +52,7 @@ function RegisterProducts() {
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        
+        console.log("product " + JSON.stringify(product))
 
         if (id !== undefined) {
             put(`/api/Products`, product, setProduct, {

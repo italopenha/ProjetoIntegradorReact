@@ -37,15 +37,18 @@ function App() {
 
           <Route path="/cadastrarproduto" element={<RegisterProducts />} />
 
+          <Route path="/cadastrarproduto/:id" element={<RegisterProducts />} />
+
           {/* <Route path="/formularioProduto/:id" element={<RegisterProducts />} /> */}
 
-          <Route path="/deletarpompra/:id" element={<DeletePurchase />} />
+          <Route path="/deletarcompra/:id" element={<DeletePurchase />} />
 
           <Route path="/deletarproduto/:id" element={<DeleteProduct />} />
 
           <Route path="/listaprodutos" element={<ListProduct />} />
 
           <Route path="/listacompras" element={<ListPurchase />} />
+          
 
 
 

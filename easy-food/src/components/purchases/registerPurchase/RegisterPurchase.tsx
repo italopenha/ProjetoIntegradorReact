@@ -81,21 +81,21 @@ function RegisterPurchase() {
                     'Authorization': token
                 }
             })
-            alert('Postagem atualizada com sucesso');
+            alert('Compra atualizada com sucesso');
         } else {
             post(`/api/Purchases`, purchase, setPurchase, {
                 headers: {
                     'Authorization': token
                 }
             })
-            alert('Postagem cadastrada com sucesso');
+            alert('Compra cadastrada com sucesso');
         }
         back()
 
     }
 
     function back() {
-        navigate('/products')
+        navigate('/listacompras')
     }
 
     return (
