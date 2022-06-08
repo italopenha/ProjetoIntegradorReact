@@ -24,26 +24,26 @@ function Navbar() {
                 <nav>
                     <img className="nav-logo" src="https://i.imgur.com/FyqHkFH.png" alt="Imagem Tela Inicial"/>
                         <ul className="nav-list">
-                            <li>
+                            <li className='text'>
                                 <a href="/home">Home</a>
                             </li>
-                            <li>
+                            <li className='text'>
                                 <a href="/sobrenos">Sobre</a>
                             </li>
-                            <li>
+                            <li className='text'>
                                 <a href="/">Produtos</a>
                             </li>
-                            <li>
+                            <li className='text'>
                                 <a href="/contato">Contato</a>
                             </li>
-                            <li>
-                                <a className='icon' href="/">
-                                    <img  src="https://i.imgur.com/TX0KzDA.png" alt=""/>
+                            <li >
+                                <a  href="/">
+                                    <img className='icon' src="https://i.imgur.com/TX0KzDA.png" alt=""/>
                                 </ a>    
                             </li>
-                            <li>
-                                <a className='icon2' href="/login">
-                                    <img src="https://i.imgur.com/rBljdCZ.png" alt=""/>
+                            <li >
+                                <a  href="/login">
+                                    <img className='icon2' src="https://i.imgur.com/rBljdCZ.png" alt=""/>
                                 </ a>    
                             </li>
                             <li onClick={goLogout}>
