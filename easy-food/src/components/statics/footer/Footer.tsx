@@ -3,8 +3,24 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css';
+import useLocalStorage from 'react-use-localstorage';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Footer() {
+
+    const [token, setToken] = useLocalStorage('token');
+    const [id, setId] = useLocalStorage('id');
+    let navigate = useNavigate();
+
+    function goLogout(){
+        setToken('')
+        setId('')
+        alert("Usuário deslogado")
+        navigate('/login')
+    }
+
     return (
         <>
             <footer id='footer_principal'>
@@ -17,7 +33,7 @@ function Footer() {
                         <p>Email: atendimento@EasyFood.com </p>
                     </article>
                     <article>
-                        <h2>LINKS ÚTEIS</h2>
+                        <h2>LINKS</h2>
                         <ul id= 'menu'>
                             <li>
                                 <a href="/home">Home</a>
@@ -26,19 +42,19 @@ function Footer() {
                                 <a href="/sobrenos">Sobre</a>
                             </li>
                             <li>
-                                <a href="/products">Produtos</a>
+                                <a href="/">Produtos</a>
                             </li>
                             <li>
-                                <a href="/contact">Contato</a>
+                                <a href="/contato">Contato</a>
                             </li>
                             <li>
-                                <a href="/contact">Carrinho</a>
+                                <a href="/">Carrinho</a>
                             </li>
                             <li>
                                 <a href="/login" >Login</a>
                             </li>
-                            <li>
-                                <a href="/login" >Logout</a>
+                            <li onClick={goLogout}>
+                                Logout                            
                             </li>
                         </ul>
                     </article>
@@ -62,6 +78,6 @@ function Footer() {
             </footer>
         </>
     )   
-}
 
+}
  export default Footer;

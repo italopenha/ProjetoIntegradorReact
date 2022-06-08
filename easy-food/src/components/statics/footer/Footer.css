@@ -30,6 +30,7 @@
 
 #menu li{
     display: flex;
+    cursor: pointer;
 }
 
 #menu li a{
@@ -58,7 +59,7 @@ section article {
     .icons {
         display: flex;
         flex-direction: row;
-        margin-top: 275px;
+        margin-top: 245px;
         margin-left: -25px;
     }
     .icons a{
@@ -66,4 +67,15 @@ section article {
         align-items: center;
 
     }
+    #footer_principal section {
+        display: flex;
+        justify-content: center;
+        margin-left: 41px;
+    }
+
+    h5 {
+        display: flex;
+        margin-left: 15px;
+    }
+
 }

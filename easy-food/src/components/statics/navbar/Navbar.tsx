@@ -34,7 +34,7 @@ function Navbar() {
                                 <a href="/">Produtos</a>
                             </li>
                             <li>
-                                <a href="/">Contato</a>
+                                <a href="/contato">Contato</a>
                             </li>
                             <li>
                                 <a className='icon' href="/">
@@ -42,7 +42,7 @@ function Navbar() {
                                 </ a>    
                             </li>
                             <li>
-                                <a className='icon2'href="/login">
+                                <a className='icon2' href="/login">
                                     <img src="https://i.imgur.com/rBljdCZ.png" alt=""/>
                                 </ a>    
                             </li>

@@ -11,9 +11,7 @@ a {
     transition: 0.5s; /* responsavel pelo tempo que os elementos da nav mudam de cor  */
 }
 
-li img:hover {
-    opacity: 0.5; /* responsavel pela opacidade dessa mudança de cor*/
-}
+
 
 .nav-logo{
     display: flex;
@@ -74,7 +72,7 @@ nav{
     }
 
     .nav-list li img {
-        margin-left: 115px;
+        margin-left: 125px;
         width: 25px;
         height: 25px;
         border-radius:50%;
