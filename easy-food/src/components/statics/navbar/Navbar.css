@@ -49,9 +49,16 @@ nav{
     display: flex;
     margin-top: -8px;
     width: 40px;
+    height: 40px;
     background-color: #ECE7B4;
     border-radius: 50%;
     
+}
+
+ li .logout {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 999px) {

@@ -1,7 +1,23 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 import './Navbar.css'
 
+
+
 function Navbar() {
+
+    const [token, setToken] = useLocalStorage('token');
+    const [id, setId] = useLocalStorage('id');
+    let navigate = useNavigate();
+
+    function goLogout(){
+        setToken('')
+        setId('')
+        alert("Usuário deslogado")
+        navigate('/login')
+    }
+
     return (
         <>
             <header>
@@ -21,9 +37,17 @@ function Navbar() {
                                 <a href="/">Contato</a>
                             </li>
                             <li>
+                                <a href="/">
+                                    <img src="https://i.imgur.com/TX0KzDA.png" alt=""/>
+                                </ a>    
+                            </li>
+                            <li>
                                 <a href="/login">
                                     <img src="https://i.imgur.com/rBljdCZ.png" alt=""/>
                                 </ a>    
+                            </li>
+                            <li onClick={goLogout}>
+                                    <img className='logout' src="https://i.imgur.com/wVlnv0e.png" alt=""/>   
                             </li>
                         </ul>
                 </nav>
