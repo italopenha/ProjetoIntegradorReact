@@ -11,7 +11,7 @@ a {
     transition: 0.5s; /* responsavel pelo tempo que os elementos da nav mudam de cor  */
 }
 
-a:hover {
+li img:hover {
     opacity: 0.5; /* responsavel pela opacidade dessa mudança de cor*/
 }
 
@@ -59,6 +59,7 @@ nav{
     padding: 5px;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 @media (max-width: 999px) {
@@ -69,27 +70,40 @@ nav{
     .nav-list{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 6px;
-        margin-left: -20px;
-
-    }
-    
-    .nav-list img {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        margin-top: -77px;
-        margin-left: 100px;
+        margin-top: -2px;
     }
 
     .nav-list li img {
         margin-left: 115px;
+        width: 25px;
+        height: 25px;
+        border-radius:50%;
+        margin-top: 1px;
     }
+
+    .nav-list li .logout{
+        width: 15px;
+        height: 15px;
+    }
+    
 
     .nav-logo{
 
         margin-top: 5px;
         margin-left: -20px;
     }
+
+    ul li .logout{
+        margin-top:-25px;
+    }
+
+    ul li .icon{
+        margin-top: -100px;
+    }
+
+    ul li .icon2{
+        margin-top: -63px;
+    }
+
+
 }

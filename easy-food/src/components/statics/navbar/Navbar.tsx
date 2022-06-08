@@ -37,12 +37,12 @@ function Navbar() {
                                 <a href="/">Contato</a>
                             </li>
                             <li>
-                                <a href="/">
-                                    <img src="https://i.imgur.com/TX0KzDA.png" alt=""/>
+                                <a className='icon' href="/">
+                                    <img  src="https://i.imgur.com/TX0KzDA.png" alt=""/>
                                 </ a>    
                             </li>
                             <li>
-                                <a href="/login">
+                                <a className='icon2'href="/login">
                                     <img src="https://i.imgur.com/rBljdCZ.png" alt=""/>
                                 </ a>    
                             </li>
