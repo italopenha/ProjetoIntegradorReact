@@ -6,6 +6,7 @@ import useLocalStorage from "react-use-localstorage";
 import { login } from "../../services/Services";
 import AuthenticationDTO from "../../models/AuthenticationDTO";
 import './Login.css';
+import { toast } from "react-toastify";
 
 function Login() {
 
@@ -32,11 +33,28 @@ function Login() {
         e.preventDefault();
         
         try {
-
             await login(`/api/Authentication`, authenticationDTO, setToken);
-            alert('Usuário logado com sucesso!');    
+            toast.success('Login efetuado com sucesso!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            }) 
         } catch (error) {
-            alert('Dados do usuário inconsistentes. Erro ao logar!');
+            toast.error('E-mail ou senha inválidos, tente novamente!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
         }
     }
 

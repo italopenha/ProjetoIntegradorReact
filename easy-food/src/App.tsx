@@ -14,43 +14,50 @@ import RegisterProducts from './components/products/registerProduct/RegisterProd
 import ListProduct from './components/products/listProduct/ListProduct';
 import ListPurchase from './components/purchases/listPurchase/ListPurchase';
 import RegisterUser from './pages/registerUser/RegisterUser';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <div style={{ minHeight: '100vh' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
+    <Provider store={store}>
+      <ToastContainer />
+      <Router>
+        <Navbar />
+        <div style={{ minHeight: '100vh' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-          <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Home />} />
 
-          <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login />} />
 
-          <Route path="/sobrenos" element={<Aboutus />} />
+            <Route path="/sobrenos" element={<Aboutus />} />
 
-          <Route path="/produtos" element={<Products />} />
+            <Route path="/produtos" element={<Products />} />
 
-          <Route path="/contato" element={<Contact />} />
+            <Route path="/contato" element={<Contact />} />
 
-          <Route path="/cadastrarusuario" element={<RegisterUser />} />
+            <Route path="/cadastrarusuario" element={<RegisterUser />} />
 
-          <Route path="/cadastrarproduto" element={<RegisterProducts />} />
+            <Route path="/cadastrarproduto" element={<RegisterProducts />} />
 
-          <Route path="/cadastrarproduto/:id" element={<RegisterProducts />} />
+            <Route path="/cadastrarproduto/:id" element={<RegisterProducts />} />
 
-          <Route path="/deletarcompra/:id" element={<DeletePurchase />} />
+            <Route path="/deletarcompra/:id" element={<DeletePurchase />} />
 
-          <Route path="/deletarproduto/:id" element={<DeleteProduct />} />
+            <Route path="/deletarproduto/:id" element={<DeleteProduct />} />
 
-          <Route path="/listaprodutos" element={<ListProduct />} />
+            <Route path="/listaprodutos" element={<ListProduct />} />
 
-          <Route path="/listacompras" element={<ListPurchase />} />
-        
-        </Routes>
-      </div>
-      <Footer />
-    </Router>
+            <Route path="/listacompras" element={<ListPurchase />} />
+
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </Provider>
 
   );
 }

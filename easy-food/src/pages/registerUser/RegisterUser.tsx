@@ -4,6 +4,7 @@ import { userRegistration } from "../../services/Services";
 import UserRegisterDTO from "../../models/UserRegisterDTO";
 import { Grid, Typography, Button, InputLabel, Select, Box, TextField, FormControl } from "@mui/material";
 import './RegisterUser.css';
+import { toast } from "react-toastify";
 
 function RegisterUser () {
 
@@ -59,14 +60,40 @@ function RegisterUser () {
         if(confirmPassword === userRegisterDTO.password){
             try {
                 await userRegistration(`/api/Users`, userRegisterDTO, setUserResult)
-                alert('Usuario cadastrado com sucesso')
+                toast.success('Cadastro realizado com sucesso!', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                })
             } catch (error) {
-                alert(error)
-                alert('erro no formulário, tente novamente!')
+                toast.error('Usuário já cadastrado, tente outro e-mail!', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                })
             }
 
-        }else{
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+        } else {
+            toast.error('Dados inconsistentes, tente novamente!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
         }
     }
 
