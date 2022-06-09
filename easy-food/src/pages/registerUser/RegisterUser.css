@@ -1,3 +1,7 @@
+.register-user-background{
+    background-color: #F3EFCC;
+}
+
 .img-register-user{
     background-image: url(https://i.imgur.com/mOpndcc.jpeg);
     background-repeat: no-repeat;
@@ -5,13 +9,25 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    border-radius: 150px;
 }
+.logo-register-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.logo-img{
+    height: 100%;
+
+}
+
 .cadastre-se {
     font-family: 'Raleway' !important;
-    font-size: 70px !important;
+    font-size: 50px !important;
     color: #32502E !important;
     font-weight: bold !important;
+    margin-top: 20px !important;
 }
 
 .btn-cadastrar {
@@ -19,4 +35,8 @@
     color: #ECE7B4 !important;
     font-family: 'Raleway' !important;
     font-weight: bold !important;
+}
+
+.tipoUsuario{
+    padding-top: 15px !important; 
 }

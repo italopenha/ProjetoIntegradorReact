@@ -51,9 +51,12 @@ function Login() {
     return (
         <Grid container className="login-background" direction='row' justifyContent='center' alignItems='center'>
             <Grid alignItems='center' xs={6}>
+                <Box className="logo-register-user">
+                     <img src="https://i.imgur.com/lcsP9kH.png" alt="" className="logo-img"/>
+                </Box>
                 <Box paddingX={20}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom component='h3' align='center' className='seja-bem-vindo'>Bem-Vindo!(a)</Typography>
+                        <Typography variant='h3' gutterBottom component='h3' align='center' className='seja-bem-vindo'>Bem-Vindo(a)!</Typography>
                         <Typography variant='h6' gutterBottom component='h6' align='center' className='digite-email-senha'>Digite seu e-mail e senha para entrar</Typography>
                         
                         <TextField

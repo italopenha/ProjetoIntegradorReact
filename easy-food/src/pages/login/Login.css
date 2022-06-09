@@ -1,12 +1,26 @@
 .login-background {
     background-color: #F3EFCC;
+
+}
+
+.logo-register-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.logo-img{
+    height: 100%;
+
 }
 
 .seja-bem-vindo {
     font-family: 'Raleway' !important;
-    font-size: 70px !important;
+    font-size: 50px !important;
     color: #32502E;
     font-weight: bold !important;
+    margin-top: 20px !important;
 }
 
 .digite-email-senha {
@@ -41,5 +55,4 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    border-radius: 150px;
 }

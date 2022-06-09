@@ -74,6 +74,9 @@ function RegisterUser () {
         <Grid container direction='row' justifyContent='center' alignItems='center' className='register-user-background'>
             <Grid item xs={6} className='img-register-user'></Grid>
             <Grid item xs={6} alignItems='center'>
+                <Box className="logo-register-user">
+                     <img src="https://i.imgur.com/lcsP9kH.png" alt="" className="logo-img"/>
+                </Box>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='cadastre-se'>Cadastre-se</Typography>
@@ -101,8 +104,8 @@ function RegisterUser () {
                         
                         <FormControl 
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            variant="outlined" color="success" fullWidth>
-                            <InputLabel htmlFor="outlined-age-native-simple">Tipo de Usuário</InputLabel>
+                            variant="outlined" color="success" fullWidth  className="tipoUsuario">
+                            <InputLabel htmlFor="outlined-age-native-simple"  className="tipoUsuario">Tipo de Usuário</InputLabel>
                             <Select
                             value={userRegisterDTO.type}
                             native
@@ -121,9 +124,9 @@ function RegisterUser () {
                         <TextField
                             value={userRegisterDTO.address}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='address' label='Endereço' variant='outlined' color="success" name='address' margin='normal' fullWidth />
+                            id='address' label='Endereço' variant='outlined' color="success" name='address' margin='normal' fullWidth/>
                         
-                        <Grid container direction="row" justifyContent="space-between" alignItems="center">
+                        <Grid container direction="row" justifyContent="space-between" alignItems="center"  className="tipoUsuario">
                                 <Button type='submit' variant='contained' className="btn-cadastrar">
                                         Cadastrar
                                 </Button>
