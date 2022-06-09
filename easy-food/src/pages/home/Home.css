@@ -120,7 +120,13 @@
     position: relative;
     width: 200px;
     margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.image a {
+    border-radius: 50%;
 }
 
 .image__img {
@@ -132,8 +138,6 @@
 
 .image__overlay {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 160px;
     height: 160px;
     background: rgba(185, 244, 149, 0.6);
@@ -151,6 +155,7 @@
 .image__overlay--blur {
     backdrop-filter: blur(5px);
     border-radius: 50%;
+    
 }
 
 .image__overlay>* {
@@ -166,25 +171,12 @@
     transform: translateY(0);
 }
 
-.image__title {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.image__description {
-    font-size: 1.25em;
-    margin-top: 0.25em;
-}
-
 .image p {
     color: #32502E;
     font-weight: bold;
     font-family: sans-serif;
+    text-transform: uppercase;
 }
-
-
-
-
 
 /* Third part of the body for the video */
 .titleVideo {
