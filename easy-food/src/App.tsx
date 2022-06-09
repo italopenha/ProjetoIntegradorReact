@@ -5,8 +5,8 @@ import Footer from './components/statics/footer/Footer';
 import Home from './pages/home/Home';
 import DeletePurchase from './components/purchases/deletePurchase/DeletePurchase';
 import DeleteProduct from './components/products/deleteProduct/DeleteProduct';
-import AboutUs from './pages/aboutUs/AboutUs';
-/* import Products from './pages/products/Products'; */
+import AboutUs from './pages/aboutus/AboutUs';
+import Products from './pages/products/Products';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
 import './App.css';
@@ -14,6 +14,7 @@ import RegisterProducts from './components/products/registerProduct/RegisterProd
 import ListProduct from './components/products/listProduct/ListProduct';
 import ListPurchase from './components/purchases/listPurchase/ListPurchase';
 import RegisterUser from './pages/registerUser/RegisterUser';
+
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
 
           <Route path="/sobrenos" element={<AboutUs />} />
 
-          {/*           <Route path="/produtos" element={<Products />} /> */}
+          <Route path="/produtos" element={<Products />} />
 
           <Route path="/contato" element={<Contact />} />
 
@@ -39,8 +40,6 @@ function App() {
 
           <Route path="/cadastrarproduto/:id" element={<RegisterProducts />} />
 
-          {/* <Route path="/formularioProduto/:id" element={<RegisterProducts />} /> */}
-
           <Route path="/deletarcompra/:id" element={<DeletePurchase />} />
 
           <Route path="/deletarproduto/:id" element={<DeleteProduct />} />
@@ -48,7 +47,7 @@ function App() {
           <Route path="/listaprodutos" element={<ListProduct />} />
 
           <Route path="/listacompras" element={<ListPurchase />} />
-        
+
         </Routes>
       </div>
       <Footer />

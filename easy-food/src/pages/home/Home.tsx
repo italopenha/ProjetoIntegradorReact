@@ -63,39 +63,47 @@ function Home() {
 
                     <Grid item xs={3} >
                         <Box className="image">
-                            <img className="image__img" src="https://i.imgur.com/tg6i5Zx.png" alt="Frutas" />
-                            <div className="image__overlay image__overlay--blur" >
-                                <p>Frutas</p>
-                            </div>
+                            <a href="/">
+                                <img className="image__img" src="https://i.imgur.com/tg6i5Zx.png" alt="Frutas" />
+                                <div className="image__overlay image__overlay--blur" >
+                                    <p>Frutas</p>
+                                </div>
+                            </a>
                         </Box>
                     </Grid>
 
                     <Grid item xs={3} >
                         <Box className="image">
-                            <img className="image__img" src="https://i.imgur.com/ujgxfUU.jpg" alt="Verduras" />
-                            <div className="image__overlay image__overlay--blur">
-                                <p>Verduras</p>
-                            </div>
-
-                        </Box>
-                    </Grid>
-
-                    <Grid item xs={3} >
-                        <Box className="image">
-                            <img className="image__img" src="https://i.imgur.com/nseSVu9.png" alt="Legumes" />
-                            <div className="image__overlay image__overlay--blur">
-                                <p>Legumes</p>
-                            </div>
+                            <a href="/">
+                                <img className="image__img" src="https://i.imgur.com/ujgxfUU.jpg" alt="Verduras" />
+                                <div className="image__overlay image__overlay--blur">
+                                    <p>Verduras</p>
+                                </div>
+                            </a>
 
                         </Box>
                     </Grid>
 
                     <Grid item xs={3} >
                         <Box className="image">
-                            <img className="image__img" src="https://i.imgur.com/niyNsNl.png" alt="Grãos" />
-                            <div className="image__overlay image__overlay--blur">
-                                <p>Grãos</p>
-                            </div>
+                            <a href="/">
+                                <img className="image__img" src="https://i.imgur.com/nseSVu9.png" alt="Legumes" />
+                                <div className="image__overlay image__overlay--blur">
+                                    <p>Legumes</p>
+                                </div>
+                            </a>
+
+                        </Box>
+                    </Grid>
+
+                    <Grid item xs={3} >
+                        <Box className="image">
+                            <a href="/">
+                                <img className="image__img" src="https://i.imgur.com/niyNsNl.png" alt="Grãos" />
+                                <div className="image__overlay image__overlay--blur">
+                                    <p>Grãos</p>
+                                </div>
+                            </a>
 
                         </Box>
                     </Grid>

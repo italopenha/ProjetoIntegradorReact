@@ -62,7 +62,6 @@ function AboutUs() {
                             Os pequenos agricultores familiares produzem mais de 70% da oferta global de alimentos. No entanto, a pobreza extrema também continua concentrada nas áreas rurais e é um dos principais impulsionadores da fome, com mais de ¾ dos extremamente pobres vivendo em áreas rurais.</Typography>
                     </Box>
                 </Grid>
-
             </Grid>
 
         </>
