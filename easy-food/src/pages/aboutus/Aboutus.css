@@ -52,8 +52,8 @@
 }
 
 .fluxogramas {
-    width: 864px;
-    height: 608px;
+    width: 632px;
+    height: 504px;
 }
 
 .grid-container-2 {
@@ -76,11 +76,11 @@
 
 .txt-o-que-defendemos {
     color: #32502E !important;
-    font-family: 'Raleway';
-    font-size: 20px;
+    font-family: 'Raleway' !important;
+    font-size: 20px !important;
     display: flex !important;
     justify-content: center !important;
     text-align: center !important;
     line-height: 24px !important;
-    letter-spacing: 3px;
+    letter-spacing: 3px !important;
 }
