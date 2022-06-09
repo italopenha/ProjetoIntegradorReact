@@ -5,7 +5,7 @@ import Footer from './components/statics/footer/Footer';
 import Home from './pages/home/Home';
 import DeletePurchase from './components/purchases/deletePurchase/DeletePurchase';
 import DeleteProduct from './components/products/deleteProduct/DeleteProduct';
-import AboutUs from './pages/aboutUs/AboutUs';
+import Aboutus from './pages/aboutus/Aboutus';
 /* import Products from './pages/products/Products'; */
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
@@ -27,7 +27,7 @@ function App() {
 
           <Route path="/login" element={<Login />} />
 
-          <Route path="/sobrenos" element={<AboutUs />} />
+          <Route path="/sobrenos" element={<Aboutus />} />
 
           {/*           <Route path="/produtos" element={<Products />} /> */}
 
