@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material'
 import './Aboutus.css';
 
-function AboutUs() {
+function Aboutus() {
     return (
         <>
             <Grid container className='grid-container-1'>
@@ -70,4 +70,4 @@ function AboutUs() {
 
 }
 
-export default AboutUs;
+export default Aboutus;

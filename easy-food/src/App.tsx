@@ -6,7 +6,7 @@ import Home from './pages/home/Home';
 import DeletePurchase from './components/purchases/deletePurchase/DeletePurchase';
 import DeleteProduct from './components/products/deleteProduct/DeleteProduct';
 import Aboutus from './pages/aboutus/Aboutus';
-/* import Products from './pages/products/Products'; */
+import Products from './pages/products/Products';
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
 import './App.css';
@@ -29,7 +29,7 @@ function App() {
 
           <Route path="/sobrenos" element={<Aboutus />} />
 
-          {/*           <Route path="/produtos" element={<Products />} /> */}
+          <Route path="/produtos" element={<Products />} />
 
           <Route path="/contato" element={<Contact />} />
 
@@ -38,8 +38,6 @@ function App() {
           <Route path="/cadastrarproduto" element={<RegisterProducts />} />
 
           <Route path="/cadastrarproduto/:id" element={<RegisterProducts />} />
-
-          {/* <Route path="/formularioProduto/:id" element={<RegisterProducts />} /> */}
 
           <Route path="/deletarcompra/:id" element={<DeletePurchase />} />
 
