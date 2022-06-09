@@ -18,6 +18,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import Product from './pages/product/Product';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
 
             <Route path="/listacompras" element={<ListPurchase />} />
 
+            <Route path="/produto1" element={<Product />} />
           </Routes>
         </div>
         <Footer />

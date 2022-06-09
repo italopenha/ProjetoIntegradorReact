@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.parte3{
+    background-color: #ECE7B4;
+    height: 10vh;
+    margin-top: 100px;
+
+}
+
+
+.parte1 {
+    display: flex;
+    text-align:left;
+    margin-top: 250px;
+    margin-left: 150px;
+    width: 200px;
+}
+
+.produto {
+    display: flex;
+    width: 300px;
+    margin-left: 500px;
+    margin-top: -320px;
+    border: 50%;
+}
+
+
+
+.parte1 li {
+    display: flex;
+    list-style-type: none;
+    color: #406343;
+}
+
+ul  .titulo {
+    display: flex;
+    padding: 80px;
+    margin-top: -130px;
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+ul .descricao {
+    margin-left: 1px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    width: 200px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+ul .descricao2 {
+    padding-top: 10px;
+    margin-left: 120px;
+    margin-top: 15px;
+    
+}
+
+ul .descricao3 {
+    margin-left: 95px;
+    margin-top: 1px;
+    
+}
+
+.parte3{
+    padding-top: 175px;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: center;
+    margin-top: -475px;
+
+}
+
+.parte3 h3{
+    margin-top: -140px;
+    color: #406343;
+}
+.parte3 p{
+    color: #406343;
+}
+
+
+.titulo p{
+    margin-top: -150px;
+    color: #406343
+}
+
+.principal {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+ .content {
+    height: 320px;
+    width: 325px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 34%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px #ECE7B4(0, 0, 0, 0.75);
+}
+
+.content .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    bottom: 0px;
+    margin-left: 875px;
+    display: flex;
+    margin-top: -86px;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #406343;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+
+.botaoproduct {
+    left: 900px;
+    top: -650px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    color: #ECE7B4 !important;
+}
+
+.botaoproduct ::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:  #406343;
+    color: #ECE7B4 !important;
+}
