@@ -2,11 +2,10 @@ import React, { ChangeEvent, useEffect, useState }  from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import { userRegistration } from "../../services/Services";
 import UserRegisterDTO from "../../models/UserRegisterDTO";
-import { Grid, Typography, Button, TextField, FormControl, InputLabel, Select } from '@material-ui/core';
-import { Box } from "@mui/material";
-import './UserRegistration.css';
+import { Grid, Typography, Button, InputLabel, Select, Box, TextField, FormControl } from "@mui/material";
+import './RegisterUser.css';
 
-function UserRegistration () {
+function RegisterUser () {
 
     let navigate = useNavigate();
 
@@ -72,42 +71,42 @@ function UserRegistration () {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center' className='background'>
-            <Grid item xs={6} className='imagem2'></Grid>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='register-user-background'>
+            <Grid item xs={6} className='img-register-user'></Grid>
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
+                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='cadastre-se'>Cadastre-se</Typography>
                         
                         <TextField
                             value={userRegisterDTO.email}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='email' label='Email' variant='outlined' name='email' margin='normal' type='email' fullWidth />
+                            id='email' label='Email' variant='outlined' color="success" name='email' margin='normal' type='email' fullWidth />
 
                         <TextField
                             value={userRegisterDTO.name}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='name' label='Nome' variant='outlined' name='name' margin='normal' fullWidth />
+                            id='name' label='Nome' variant='outlined' color="success" name='name' margin='normal' fullWidth />
                         
                         <TextField
                             value={userRegisterDTO.password}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='password' label='Senha' variant='outlined' name='password' margin='normal' type='password' fullWidth />
+                            id='password' label='Senha' variant='outlined' color="success" name='password' margin='normal' type='password' fullWidth />
                         
                         
                         <TextField
                             value={confirmPassword} 
                             onChange={(e: ChangeEvent<HTMLInputElement>) => confirmPasswordHandle(e)}
-                            id='confirmPassword' label='Confirmar Senha' variant='outlined' name='confirmPassword' margin='normal' type='password' fullWidth />
+                            id='confirmPassword' label='Confirmar Senha' variant='outlined' color="success" name='confirmPassword' margin='normal' type='password' fullWidth />
                         
                         <FormControl 
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            variant="outlined">
-                            <InputLabel htmlFor="outlined-age-native-simple">tipo</InputLabel>
+                            variant="outlined" color="success" fullWidth>
+                            <InputLabel htmlFor="outlined-age-native-simple">Tipo de Usuário</InputLabel>
                             <Select
                             value={userRegisterDTO.type}
                             native
-                            label="Tipo"
+                            label="Tipo de Usuário"
                             inputProps={{
                                 name: 'type',
                                 id: 'outlined-age-native-simple',
@@ -122,10 +121,10 @@ function UserRegistration () {
                         <TextField
                             value={userRegisterDTO.address}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id='address' label='Endereço' variant='outlined' name='address' margin='normal' fullWidth />
+                            id='address' label='Endereço' variant='outlined' color="success" name='address' margin='normal' fullWidth />
                         
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
-                                <Button type='submit' variant='contained' className="buttonColor1">
+                                <Button type='submit' variant='contained' className="btn-cadastrar">
                                         Cadastrar
                                 </Button>
                         </Grid>
@@ -136,4 +135,4 @@ function UserRegistration () {
     );
 }
 
-export default UserRegistration;
+export default RegisterUser;

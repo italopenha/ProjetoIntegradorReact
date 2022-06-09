@@ -1,28 +1,45 @@
-.imagem{
-     background-image: url(https://i.imgur.com/qIa4hlB.png);
-     background-repeat: no-repeat;
-     width: 100vh;
-     min-height: 100vh;
-     background-size: cover;
-     background-position: center;
- }
- 
- .text-decorator-none{
-     text-decoration: none;
- }
+.login-background {
+    background-color: #F3EFCC;
+}
 
- .text-decorator-none Button {
-     width: 100%;
- }
-
- .background{
-     background-color: #F3EFCC;
- }
- .buttonColor1{
-    background-color: #32502E!important;
-    color: #ECE7B4!important;
- }
- .textos1{
-    font-weight: bold !important;
+.seja-bem-vindo {
+    font-family: 'Raleway' !important;
+    font-size: 70px !important;
     color: #32502E;
- }
+    font-weight: bold !important;
+}
+
+.digite-email-senha {
+    font-family: 'Raleway' !important;
+    font-size: 25px !important;
+    color: #32502E;
+}
+
+.btn-entrar {
+    background-color: #32502E !important;
+    color: #ECE7B4 !important;
+    font-family: 'Raleway' !important;
+    font-weight: bold !important;
+}
+
+.nao-tem-uma-conta {
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #32502E;
+}
+
+.btn-cadastre-se {
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: #32502E;
+}
+
+.img-login {
+    background-image: url(https://i.imgur.com/aCO5coQ.jpeg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 150px;
+}

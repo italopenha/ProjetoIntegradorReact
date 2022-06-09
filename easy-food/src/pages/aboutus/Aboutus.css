@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+.grid-container-1 {
+    background: #F3EFCC;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     width: auto;
     height: auto;
@@ -9,28 +17,14 @@
     margin-top: 30px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid-container-1 {
-    background: #F3EFCC;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
 .sobre-a-easy-food {
     padding: 30px 30px 30px;
-    font-family: 'Raleway';
-    font-size: 20px;
+    font-family: 'Raleway' !important;
+    font-size: 35px !important;
     color: #32502E;
     display: flex;
     justify-content: center;
+    font-weight: bold !important;
 }
 
 .arabesco img {
@@ -39,28 +33,26 @@
 
 .txt-sobre {
     color: #32502E !important;
-    font-family: 'Raleway';
-    font-size: 20px;
+    font-family: 'Raleway' !important;
+    font-size: 20px !important;
     display: flex !important;
     justify-content: center !important;
     text-align: center !important;
     line-height: 24px !important;
-    letter-spacing: 3px;
+    letter-spacing: 3px !important;
 }
 
 .grid-images {
-    background-color: #32502E;
+    background-color: #ECE7B4;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-.img {
-    padding: 30px 30px 30px;
-    border-radius: 50%;
-    width: 270px;
-    height: 270px;
+.fluxogramas {
+    width: 864px;
+    height: 608px;
 }
 
 .grid-container-2 {
@@ -73,14 +65,15 @@
 
 .o-que-defendemos {
     padding: 30px 30px 30px;
-    font-family: 'Raleway';
-    font-size: 20px;
+    font-family: 'Raleway' !important;
+    font-size: 35px !important;
     color: #32502E;
     display: flex;
     justify-content: center;
+    font-weight: bold !important;
 }
 
-.txt-defendemos {
+.txt-o-que-defendemos {
     color: #32502E !important;
     font-family: 'Raleway';
     font-size: 20px;

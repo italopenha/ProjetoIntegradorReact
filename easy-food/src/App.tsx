@@ -5,15 +5,15 @@ import Footer from './components/statics/footer/Footer';
 import Home from './pages/home/Home';
 import DeletePurchase from './components/purchases/deletePurchase/DeletePurchase';
 import DeleteProduct from './components/products/deleteProduct/DeleteProduct';
-import AboutUs from './pages/aboutus/Aboutus';
+import AboutUs from './pages/aboutUs/AboutUs';
 /* import Products from './pages/products/Products'; */
 import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
-import UserRegistration from './pages/userregistration/UserRegistration';
 import './App.css';
 import RegisterProducts from './components/products/registerProduct/RegisterProducts';
 import ListProduct from './components/products/listProduct/ListProduct';
 import ListPurchase from './components/purchases/listPurchase/ListPurchase';
+import RegisterUser from './pages/registerUser/RegisterUser';
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
 
           <Route path="/contato" element={<Contact />} />
 
-          <Route path="/cadastrarusuario" element={<UserRegistration />} />
+          <Route path="/cadastrarusuario" element={<RegisterUser />} />
 
           <Route path="/cadastrarproduto" element={<RegisterProducts />} />
 
@@ -48,10 +48,7 @@ function App() {
           <Route path="/listaprodutos" element={<ListProduct />} />
 
           <Route path="/listacompras" element={<ListPurchase />} />
-          
-
-
-
+        
         </Routes>
       </div>
       <Footer />
