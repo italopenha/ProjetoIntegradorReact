@@ -160,3 +160,7 @@
 .section2 {
     background-color: #ECE7B4;
 }
+
+.img-products img{
+    height: 1000px;
+}

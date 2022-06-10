@@ -132,15 +132,10 @@ function Products() {
                                 <Typography variant="body2" component="p">
                                     {product.price}
                                 </Typography>
-                                <Typography variant="body2" component="p">
-                                    {product.image}
+                                <Typography className="img-products" variant="body2" component="p">
+                                  
                                 </Typography>
-                                <Typography variant="body2" component="p">
-                                    {product.description}
-                                </Typography>
-                                <Typography variant="body2" component="p">
-                                    {product.quantity}
-                                </Typography>
+                               
                             </CardContent>
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>
@@ -163,6 +158,7 @@ function Products() {
                             </CardActions>
                         </Card>
                     </Box>
+                    
                 ))
             }
         </>
