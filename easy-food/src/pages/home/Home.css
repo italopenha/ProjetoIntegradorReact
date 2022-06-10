@@ -84,24 +84,32 @@
 }
 
 .txtresume p {
-    font-family: 'Raleway';
+    font-family: 'Raleway'!important;
     color: #32502E;
-    font-size: 14px;
+    font-size: 20px !important;
     text-align: center;
     line-height: 24px;
+    padding: 16px;
 }
 
+
 .gridContainer1 {
-    background: #f5f4ea;
+    background: #F3EFCC;
+    background-image: url(https://i.imgur.com/wsWzdGe.png), url(https://i.imgur.com/stMfrer.png);
+    background-position: left top, right top ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
 
+
+
 /* Second part of the body for the images */
 .gridContainer2 {
-    background: #f0edd3;
+    background: #ECE7B4;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -127,13 +135,17 @@
 
 .image a {
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image__img {
-    display: block;
+    
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    border: #32502E double;
 }
 
 .image__overlay {
@@ -155,7 +167,6 @@
 .image__overlay--blur {
     backdrop-filter: blur(5px);
     border-radius: 50%;
-    
 }
 
 .image__overlay>* {
@@ -187,6 +198,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.txt-video p {
+    font-family: 'Raleway'!important;
+    color: #32502E;
+    font-size: 20px !important;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 16px;
+    padding-right: 150px;
+    padding-left: 150px;
 }
 
 .video {

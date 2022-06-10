@@ -43,7 +43,10 @@
     font-family:'Poppins', sans-serif;
 }
 
-article h2, p, h5, ul {
+.footer-texto h2, 
+.footer-texto p, 
+.footer-texto h5, 
+.footer-texto ul {
     color:#ECE7B4;
     font-family:'Poppins', sans-serif;
 }
@@ -73,7 +76,7 @@ section article {
         margin-left: 41px;
     }
 
-    h5 {
+    .footer-texto h5 {
         display: flex;
         margin-left: 15px;
     }

@@ -28,24 +28,16 @@ function Home() {
                 <Box className="arabesco">
                     <img src="https://i.imgur.com/ZbNFKLz.png" alt="" />
                 </Box>
-                <Grid item xs={4}>
-                    <Box>
+               
 
-                    </Box>
-                </Grid>
-
-                <Grid item xs={4} className="txtresume">
+                <Grid item xs={6} className="txtresume">
                     <Box padding={5}>
-                        <p>A EasyFood nasceu da necessidade de transformar vidas.
-                            Criamos um modelo de Desenvolvimento Social Sustentável,
-                            em colaboração direta com pequenos produtores, encurtando
-                            a relação entre o produtor e o consumidor.</p>
-                    </Box>
-                </Grid>
-
-                <Grid item xs={4}>
-                    <Box>
-
+                        <p>A EasyFood nasceu da necessidade de transformar vidas. Criamos um modelo de Desenvolvimento Social Sustentável, em colaboração direta com pequenos produtores, encurtando a relação entre o produtor e o consumidor.
+                        </p>
+                        <p>Além de gerar renda para as famílias atendidas, desenvolvemos o potencial de cada região de acordo com as matérias-primas locais e garantimos que os alimentos sejam produzidos com altos padrões de saúde, ambientais e éticos.
+                        </p>
+                        <p>A nossa iniciativa visa apoiar a agricultura sustentável, capacitar pequenos agricultores, acabar com a pobreza rural, garantir aos mais vulneráveis segurança alimentar e combater as mudanças climáticas, tudo isso em uma plataforma só!
+                        </p>
                     </Box>
                 </Grid>
 
@@ -115,12 +107,14 @@ function Home() {
             <Grid container className="gridContainer1">
                 <Box className="titleVideo">
                     <h2>Curiosidade</h2>
-                    <h3>Assista um pequeno vídeo:</h3>
-                    <h3>Agricultores familiares produzem 80% da comida do mundo</h3>
-
                 </Box>
                 <Box className="arabesco">
                     <img src="https://i.imgur.com/ZbNFKLz.png" alt="" />
+                </Box>
+                <Box className="txt-video">
+                    <p>Você sabia que mais de 70% da produção mundial de alimentos é produzida por agricultores familiares?</p>
+                    <p>Assista o vídeo a seguir das Nações Unidas e descubra um pouco mais!</p>
+                    
                 </Box>
 
                 <Grid item xs={12} >

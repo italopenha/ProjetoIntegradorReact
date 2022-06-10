@@ -25,14 +25,14 @@ function Footer() {
         <>
             <footer id='footer_principal'>
                 <section>
-                    <article>
+                    <article className='footer-texto'>
                         <h2>CONTATO</h2>
                         <p>Horário de atendimento: 08 - 17 hrs</p>
                         <p>Endereço: Rua da Glória, 19304</p>
                         <p>Telefone: (xx) 0000 - 0000</p>
                         <p>Email: atendimento@EasyFood.com </p>
                     </article>
-                    <article>
+                    <article className='footer-texto' >
                         <h2>LINKS</h2>
                         <ul id= 'menu'>
                             <li>
@@ -70,7 +70,7 @@ function Footer() {
                             </a>
                     </article>
                 </section>
-                <footer>
+                <footer className='footer-texto' >
                     <h5>
                         Direitos reservados: EasyFood &copy;
                     </h5>

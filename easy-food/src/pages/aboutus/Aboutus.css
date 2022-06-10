@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+/* First section for About Us */
 .grid-container-1 {
     background: #F3EFCC;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    background-image: url(https://i.imgur.com/p7RMDmY.png), url(https://i.imgur.com/baBMo8J.png), url(https://i.imgur.com/7VjdjvB.png), url(https://i.imgur.com/9WmflG1.png);
+    background-position: left top, right top, left bottom, right bottom ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 18%;
 }
 
 
@@ -32,28 +37,40 @@
     width: 200px;
 }
 
-.txt-sobre {
+.txt-sobre p {
     color: #32502E !important;
     font-family: 'Raleway' !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
     display: flex !important;
     justify-content: center !important;
     text-align: center !important;
     line-height: 24px !important;
     letter-spacing: 3px !important;
+    padding: 16px;
 }
 
+/* Second part, the images */
 .grid-images {
+    width: 100%;
     background-color: #ECE7B4;
-    display: flex;
+    display: flex ;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.fluxograma-sobre {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 30px 0 40px;
 }
 
 .fluxogramas {
-    width: 632px;
-    height: 504px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-container-2 {
@@ -77,10 +94,122 @@
 .txt-o-que-defendemos {
     color: #32502E !important;
     font-family: 'Raleway' !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
     display: flex !important;
     justify-content: center !important;
     text-align: center !important;
     line-height: 24px !important;
     letter-spacing: 3px !important;
+}
+
+.grid-container-1-b {
+    background: #ECE7B4;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* For the third part, the icons */
+
+.cx-geral-esq {
+    margin-bottom: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cx-esq-ind {
+    margin: 50px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .cx-esq-ind {
+        width: 16.66666667%;
+    }
+}
+
+@media (min-width: 760px) {
+    .cx-esq-ind {
+        float: left;
+    }
+}
+
+.cx-esq-interno {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones {
+    text-align: center;
+    display: flex;
+    vertical-align: top;
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 6px;
+    border: 5px solid #ECE7B4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    align-items: center;
+    justify-content: center;
+}
+
+.icones img {
+    max-width: 75%;
+    border-radius: 0;
+    opacity: 70%;
+}
+
+.cx-esq-interno h2 {
+    font-size: 17px !important;
+    font-family: 'Raleway' !important;
+    text-transform: uppercase;
+    font-weight: 650 !important;
+    margin-bottom: 5px;
+    color: #32502E;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.txt-icones p {
+    font-size: 13px;
+    font-family: 'Raleway' !important;
+    line-height: 20px !important;
+    text-align: center;
+    color: #243c21;
+    margin: auto;
+}
+
+
+.seta-pontilhada::after {
+content: '';
+border-top: 4px dotted #406343;
+position: absolute;
+width: 117px;
+transform: rotate(-12deg);
+right: -110px;
+top: 23px;
+clear: both;
+display: table;
+box-sizing: border-box;
+}
+
+.seta-pontilhada::before {
+content: '';
+border-top: 4px dotted #406343;
+position: absolute;
+width: 117px;
+transform: rotate(12deg);
+left: -110px;
+top: 20px;
 }

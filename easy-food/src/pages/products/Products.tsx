@@ -155,7 +155,7 @@ function Products() {
                                     <Link to={`/deletarProduto/${product.name}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
-                                                Deletar
+                                                Adiconar ao carrinho
                                             </Button>
                                         </Box>
                                     </Link>
