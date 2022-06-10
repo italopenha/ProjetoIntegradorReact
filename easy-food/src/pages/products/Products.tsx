@@ -75,7 +75,7 @@ function Products() {
                                                 <div className="img-main">
                                                     <a href="/">
                                                         <img src="https://i.imgur.com/ujgxfUU.jpg" alt="Verduras" />
-                                                    </a>                                                    
+                                                    </a>
                                                     <div className="img-info">
                                                         <a href="/">Verduras</a>
                                                     </div>
@@ -87,7 +87,7 @@ function Products() {
                                                 <div className="img-main">
                                                     <a href="/">
                                                         <img src="https://i.imgur.com/nseSVu9.png" alt="Legumes" />
-                                                    </a>                                                    
+                                                    </a>
                                                     <div className="img-info">
                                                         <a href="/">Legumes</a>
                                                     </div>
@@ -99,7 +99,7 @@ function Products() {
                                                 <div className="img-main">
                                                     <a href="/">
                                                         <img src="https://i.imgur.com/niyNsNl.png" alt="Grãos" />
-                                                    </a>                                                    
+                                                    </a>
                                                     <div className="img-info">
                                                         <a href="/">Grãos</a>
                                                     </div>
@@ -117,51 +117,34 @@ function Products() {
             </Grid>
 
 
-
-            {
-                products.map(product => (
-                    <Box m={2} className="section2" >
-                        <Card variant="outlined">
-                            <CardContent>
-                            <img src={product.image}></img>
-                                <Typography color="textSecondary" gutterBottom>
-                                    Produtos
-                                </Typography>
-                                <Typography variant="h5" component="h2">
-                                    {product.name}
-                                </Typography>
-                                <Typography variant="body2" component="p">
-                                    {product.price}
-                                </Typography>
-                                <Typography className="img-products" variant="body2" component="p">
-                                  
-                                </Typography>
-                               
-                            </CardContent>
-                            <CardActions>
-                                <Box display="flex" justifyContent="center" mb={1.5}>
-
-                                    <Link to={`/cadastrarproduto/${product.name}`} className="text-decorator-none" >
+            <Box className='alinhamento'>
+                {
+                    products.map(product => (
+                        <Box m={2} className="section2" >
+                            <Card variant="outlined" className='cardproducts'>
+                                <CardContent>
+                                    <img src={product.image} className="imageProducts"></img>
+                                    <Typography variant="h5" component="h2" className='nameProducts'>
+                                        {product.name}
+                                    </Typography>
+                                    <Typography variant="body2" component="p" className='priceProducts'>
+                                        R$ {product.price}
+                                    </Typography>
+                                </CardContent>
+                                <Box display="flex" justifyContent="center" mb={1.5} className="alingbtn">
+                                    <Link to={`/carrinho`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                                                Atualizar
-                                            </Button>
-                                        </Box>
-                                    </Link>
-                                    <Link to={`/deletarProduto/${product.name}`} className="text-decorator-none">
-                                        <Box mx={1}>
-                                            <Button variant="contained" size='small' color="secondary">
-                                                Adiconar ao carrinho
+                                            <Button variant='contained' className="btn-products">
+                                                Adicionar ao carrinho
                                             </Button>
                                         </Box>
                                     </Link>
                                 </Box>
-                            </CardActions>
-                        </Card>
-                    </Box>
-                    
-                ))
-            }
+                            </Card>
+                        </Box>
+                    ))
+                }
+            </Box>
         </>
     )
 }
