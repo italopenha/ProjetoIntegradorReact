@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://i.imgur.com/wsWzdGe.png), url(https://i.imgur.com/stMfrer.png);
+    background-position: left top, right top ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%;
   }
   
   .container:after{
@@ -86,33 +90,34 @@
       align-items: flex-start;
   }
   .c-inputs input{
-      width:250px;
+      width: 800px;
       height: 45px;
-      background-color: transparent;
+      background-color: #ECE7B4;
       border: none;
       border-bottom: 1px solid rgba(251,251,251,0.1);
-      outline: none;
+      outline-color: #ECE7B4;
       margin: 10px 0px;
       padding: 10px;
       box-sizing: border-box;
-      color: #ECE7B4;
+      color: #32502E;
       font-family: 'Raleway' !important;
       display: flex;
+      font-size: 18px !important;
   }
   .c-inputs textarea{
-      width:250px !important;
+      width: 800px !important;
       height: 200px !important;
-      outline: none;
-      background-color: transparent;
+      outline-color: #ECE7B4;
+      background-color: #ECE7B4;
       border:1px solid rgba(82,82,82,1);
-      color: #ECE7B4;
+      color: #32502E;
       font-family: 'Raleway' !important;
       padding: 10px;
-      font-size: 1.2rem;
+      font-size: 18px !important;
       box-sizing: border-box;
   }
   .c-inputs button{
-      width: 120px;
+      width: 70px;
       height: 40px;
       background-color: #32502E;;
       color: #F3EFCC;
@@ -124,6 +129,7 @@
       transition: .3s;
       display: flex;
       flex-direction: column;
+      font-family: 'Raleway';
   }
   
   button:hover{
@@ -134,12 +140,7 @@
       border-bottom: 1px solid rgba(252,252,252,1.00);
       transition: all ease 0.5s;
   }
-  .c-inputs textarea:focus{
-      border: none;
-      border-bottom: 1px solid rgba(255,255,255,1.00);
-      transition: all ease 0.5s;
-      background-color: rgba(0,0,0,0.1);
-  }
+
   .c-inputs button:active{
       transform: scale(1.02);
   }
@@ -165,3 +166,4 @@
           text-align: center;
       }
   }
+  
