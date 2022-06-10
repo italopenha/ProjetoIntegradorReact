@@ -13,13 +13,13 @@ return (
 	
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                 <FacebookIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                                 <InstagramIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
-                            </a>
-                            <a href="https://www.linkedin.com/school/" target="_blank" rel="noopener noreferrer">
+            </a>
+            <a href="https://www.linkedin.com/school/" target="_blank" rel="noopener noreferrer">
                                 <LinkedInIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
-                            </a>
+            </a>
 
 	    </div>
 	

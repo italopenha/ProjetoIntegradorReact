@@ -47,7 +47,7 @@ function Navbar() {
                                 <a href="/contato">Contato</a>
                             </li>
                             <li >
-                                <a  href="/">
+                                <a  href="/carrinho">
                                     <img className='icon' src="https://i.imgur.com/TX0KzDA.png" alt=""/>
                                 </ a>    
                             </li>

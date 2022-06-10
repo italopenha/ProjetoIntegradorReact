@@ -18,7 +18,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import Product from './pages/product/Product';
+import Product from './pages/products/Product';
+import Cart from './pages/cart/Cart';
 
 function App() {
   return (
@@ -55,6 +56,12 @@ function App() {
             <Route path="/listacompras" element={<ListPurchase />} />
 
             <Route path="/produto1" element={<Product />} />
+<<<<<<< Updated upstream
+=======
+
+            <Route path="/carrinho" element={<Cart/>} />
+
+>>>>>>> Stashed changes
           </Routes>
         </div>
         <Footer />
@@ -63,6 +70,3 @@ function App() {
 
   );
 }
-
-export default App;
-
