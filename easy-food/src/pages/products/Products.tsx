@@ -123,6 +123,7 @@ function Products() {
                     <Box m={2} className="section2" >
                         <Card variant="outlined">
                             <CardContent>
+                            <img src={product.image}></img>
                                 <Typography color="textSecondary" gutterBottom>
                                     Produtos
                                 </Typography>

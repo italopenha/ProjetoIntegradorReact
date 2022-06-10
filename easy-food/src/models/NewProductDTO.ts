@@ -2,7 +2,7 @@ interface NewProductDTO
 {
     name?: string | null;
     price?: number | null;
-    image?: string | null;
+    image: string 
     description?: string | null;
     quantity?: number | null;
 }
