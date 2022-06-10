@@ -30,7 +30,7 @@ function Footer() {
                         <p>Horário de atendimento: 08 - 17 hrs</p>
                         <p>Endereço: Rua da Glória, 19304</p>
                         <p>Telefone: (xx) 0000 - 0000</p>
-                        <p>Email: atendimento@EasyFood.com </p>
+                        <p>Email: atendimento.easyfood@gmail.com </p>
                     </article>
                     <article className='footer-texto' >
                         <h2>LINKS</h2>
