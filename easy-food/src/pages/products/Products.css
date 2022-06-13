@@ -13,7 +13,6 @@
     opacity: 66%;
 }
 
-
 .top h2 {
     position: absolute;
     font-size: 40px;
@@ -25,7 +24,6 @@
     text-transform: uppercase;
 
 }
-
 
 /* For the categories */
 .main-categories {
@@ -174,6 +172,11 @@
 
 .cardproducts{
     width: 300px;
+    border-radius: 50%;
+}
+
+.card-content{
+    box-shadow: #32502E 10px 10px 10px;
 }
 
 .imageProducts{

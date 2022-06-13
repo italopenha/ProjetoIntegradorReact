@@ -122,7 +122,7 @@ function Products() {
                     products.map(product => (
                         <Box m={2} className="section2" >
                             <Card variant="outlined" className='cardproducts'>
-                                <CardContent>
+                                <CardContent className='card-content'>
                                     <img src={product.image} className="imageProducts"></img>
                                     <Typography variant="h5" component="h2" className='nameProducts'>
                                         {product.name}
