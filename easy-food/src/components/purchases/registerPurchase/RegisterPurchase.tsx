@@ -28,6 +28,7 @@ function RegisterPurchase() {
     }, [token])
 
     const [product, setProduct] = useState<NewProductDTO>({
+        id: 0,
         name: '',
         price: 0,
         image: '',

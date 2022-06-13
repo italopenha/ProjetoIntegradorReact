@@ -29,7 +29,7 @@ function DeleteProduct() {
     }, [id])
 
     async function findById(id: string) {
-        searchId(`/api/Product/id/${id}`, setProduct, {
+        searchId(`/api/Products/id/${id}`, setProduct, {
             headers: {
                 'Authorization': token
             }
@@ -38,7 +38,7 @@ function DeleteProduct() {
 
     function sim() {
         navigate('/listaprodutos')
-        deleteId(`/api/Product/delete/${id}`, {
+        deleteId(`/api/Products/delete/${id}`, {
             headers: {
                 'Authorization': token
             }

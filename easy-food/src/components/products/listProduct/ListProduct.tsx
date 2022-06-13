@@ -67,14 +67,14 @@ function ListProduct() {
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>
 
-                                    <Link to={`/cadastrarproduto/${product.name}`} className="text-decorator-none" >
+                                    <Link to={`/cadastrarproduto/${product.id}`} className="text-decorator-none" >
                                         <Box mx={1}>
                                             <Button variant="contained" className="marginLeft" size='small' color="primary" >
                                                 Atualizar
                                             </Button>
                                         </Box>
                                     </Link>
-                                    <Link to={`/deletarProduto/${product.name}`} className="text-decorator-none">
+                                    <Link to={`/deletarproduto/${product.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
                                                 Deletar
