@@ -7,6 +7,7 @@ import './Products.css';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
 import useLocalStorage from 'react-use-localstorage';
+import { useCart } from '../../hooks/useCart';
 
 function Products() {
 
@@ -29,6 +30,11 @@ function Products() {
                 'Authorization': token
             }
         })
+    }
+    const { addProduct } = useCart();
+
+    function handleAddCart(productId: number) {
+        addProduct(productId)
     }
 
     useEffect(() => {
@@ -130,11 +136,14 @@ function Products() {
                                     <Typography variant="body2" component="p" className='priceProducts'>
                                         R$ {product.price}
                                     </Typography>
+                                    <Typography variant="body2" component="p" className='priceProducts'>
+                                       Quantidade: {product.quantity}
+                                    </Typography>
                                 </CardContent>
                                 <Box display="flex" justifyContent="center" mb={1.5} className="alingbtn">
                                     <Link to={`/carrinho`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant='contained' className="btn-products">
+                                            <Button variant='contained' className="btn-products" onClick={() => handleAddCart(product.id)} >
                                                 Adicionar ao carrinho
                                             </Button>
                                         </Box>

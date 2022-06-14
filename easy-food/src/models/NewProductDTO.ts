@@ -1,7 +1,7 @@
 interface NewProductDTO 
 {
     id: number;
-    name?: string | null;
+    name: string;
     price?: number | null;
     image: string 
     description?: string | null;

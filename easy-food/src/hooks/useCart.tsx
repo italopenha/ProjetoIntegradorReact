@@ -47,7 +47,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
                 if (product?.quantity && product.quantity > 0) {
                     setCart([...cart, { ...product, quantityItem: 1 }])
-                    localStorage.setItem(cartStorageKey, JSON.stringify([...cart, { ...product, quantidade: 1 }]))
+                    localStorage.setItem(cartStorageKey, JSON.stringify([...cart, { ...product, quantityItem: 1 }]))
                     toast.success(product.name + ' adicionado ao carrinho', {
                     theme:"colored"
                     })

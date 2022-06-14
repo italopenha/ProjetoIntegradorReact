@@ -1,21 +1,121 @@
 import React from "react";
-import { Grid } from '@material-ui/core'
+import { Drawer, Button, Divider,  Badge, IconButton, Typography } from '@material-ui/core';
 import { Box } from '@mui/material'
 import './Cart.css'
+import { CartItem, useCart } from "../../hooks/useCart";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+
+type Anchor = 'right';
 
 function Cart() {
+    const { cart, updateProductAmount, removeProduct } = useCart();
+
+    function handleProductIncrement(product: CartItem) {
+        const IncrementArguments = {
+            productId: product.id,
+            amount: product.quantityItem + 1
+        }
+        updateProductAmount(IncrementArguments)
+    }
+
+    function handleProductDecrement(product: CartItem) {
+        const IncrementArguments = {
+            productId: product.id,
+            amount: product.quantityItem - 1
+        }
+        updateProductAmount(IncrementArguments)
+    }
+
+    function handleRemoveProduct(productId: number) {
+        removeProduct(productId)
+    }
+
+    const [state, setState] = React.useState({
+        right: false,
+    });
+
+    const toggleDrawer = (anchor: Anchor, open: boolean) => (
+        event: React.KeyboardEvent | React.MouseEvent,
+    ) => {
+        setState({ ...state, [anchor]: open });
+    };
+    const list = (anchor: Anchor) => (
+        <div>
+            <Divider />
+            {cart.map(product => (
+                <div key={product.id} className="container-carrinho">
+                    <h3>{product?.name}</h3>
+                    <img src={product?.image} alt={product?.name} className='imgCart' />
+                    <h4>{product.quantityItem}x</h4>
+
+                    <div >
+                        <Button
+                            className='botoes-carrinho'
+                            type="button"
+                            disabled={product.quantityItem <= 1}
+                            onClick={() => handleProductDecrement(product)}
+                        >
+                        </Button>
+                        <input
+                            type="text"
+                            readOnly
+                            value={product.quantityItem}
+                        />
+                        <Button
+                            className='botoes-carrinho'
+                            type="button"
+                            data-testid="increment-product"
+                            onClick={() => handleProductIncrement(product)}
+                        >
+                        </Button>
+                    </div>
+                    <Button
+                        className='botoes-carrinho'
+                        type="button"
+                        variant="outlined"
+                        color="secondary"
+                        onClick={() => handleRemoveProduct(product.id)}
+                    >
+                        Remover
+                    </Button>
+                    <hr />
+                </div>
+        ))}
+        <Divider />
+
+
+</div>
+);
     return (
     <>
-        <Grid container >
+            {(['right'] as Anchor[]).map((anchor) => (
+                <React.Fragment key={anchor}>
+                    <Button onClick={toggleDrawer(anchor, true)}>
+                        <Typography className='texto-carrinho' >
+                            Cesta
+                        </Typography>
+                        <IconButton aria-label="show 1 new mails" className='icone-carrinho'>
+                            <Badge badgeContent={cart.length} color="secondary">
+                                <ShoppingCartIcon />
+                            </Badge>
+                        </IconButton>
+                    </Button>
+                    <Drawer className='tamanho-carrinho' anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
+                        {list(anchor)}
+                    </Drawer>
+                </React.Fragment>
+            ))}
+        {/* <Grid container >
                         <Grid xs={12} >
                             <Box className="top">
                                 <img src="https://i.imgur.com/Z0eAD7f.jpg" alt="legumes" className="img1" />
                                 <h2>Carrinho</h2>
                             </Box>
                         </Grid>
-        </Grid>
+        </Grid> */}
 
-        <div className="container-cart">
+           
+        {/* <div className="container-cart">
         <section id="cart"> 
         <article className="product-cart">
             <header>
@@ -92,7 +192,7 @@ function Cart() {
         </div>
 
         </div>
-        </footer>
+        </footer> */}
         </> 
     ); 
 }
