@@ -20,12 +20,15 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import Product from './pages/product/Product';
 import Cart from './pages/cart/Cart';
+import { CartProvider } from './hooks/useCart';
 
 function App() {
   return (
     <Provider store={store}>
       <ToastContainer />
       <Router>
+        <CartProvider>
+
         <Navbar />
         <div style={{ minHeight: '100vh' }}>
           <Routes>
@@ -58,8 +61,10 @@ function App() {
             <Route path="/listacompras" element={<ListPurchase />} />
 
             <Route path="/produto1" element={<Product />} />
+            
           </Routes>
         </div>
+        </CartProvider>
         <Footer />
       </Router>
     </Provider>
