@@ -19,9 +19,9 @@ export const search = async(url: any, setData: any, header: any) => {
     setData(result.data)
 }
 
-export const searchId = async(url: any, setDada: any, header: any) => { 
+export const searchId = async(url: any, setData: any, header: any) => { 
     const result = await api.get(url, header)
-    setDada(result.data)
+    setData(result.data)
 }
 
 export const post = async(url: any, _data: any, setData: any, header: any) => { 

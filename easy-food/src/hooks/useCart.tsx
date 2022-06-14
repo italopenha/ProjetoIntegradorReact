@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 import { toast } from 'react-toastify';
+import useLocalStorage from 'react-use-localstorage';
 import NewProductDTO from '../models/NewProductDTO';
 import { api } from '../services/Services';
 
@@ -28,6 +29,7 @@ const cartStorageKey = "@easy-food:cart";
 const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({ children }: CartProviderProps): JSX.Element {
+    const [token, setToken] = useLocalStorage('token');
     const [cart, setCart] = useState<CartItem[]>(() => {
         const storagedCart = localStorage.getItem(cartStorageKey)
 
@@ -43,13 +45,17 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
             const productAlreadyInCart = cart.find(product => product.id === productId)
 
             if (!productAlreadyInCart) {
-                const { data: product } = await api.get<NewProductDTO>(`/api/Products/id/${productId}`);
+                const { data: product } = await api.get<NewProductDTO>(`/api/Products/id/${productId}`,{
+                    headers: {
+                        'Authorization': token
+                    }
+                });
 
                 if (product?.quantity && product.quantity > 0) {
                     setCart([...cart, { ...product, quantityItem: 1 }])
                     localStorage.setItem(cartStorageKey, JSON.stringify([...cart, { ...product, quantityItem: 1 }]))
                     toast.success(product.name + ' adicionado ao carrinho', {
-                    theme:"colored"
+                        theme: "colored"
                     })
                     return;
                 }
