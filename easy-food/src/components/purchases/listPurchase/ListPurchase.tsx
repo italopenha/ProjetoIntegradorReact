@@ -5,12 +5,12 @@ import { Card, CardActions, CardContent, Button, Typography } from '@material-ui
 import './ListPurchase.css';
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/material';
-import NewPurchaseDTO from '../../../models/NewPurchaseDTO';
 import useLocalStorage from "react-use-localstorage";
+import PurchaseModel from '../../../models/PurchaseModel';
 
 function ListPurchase() {
 
-    const [purchases, setPurchases] = useState<NewPurchaseDTO[]>([]);
+    const [purchases, setPurchases] = useState<PurchaseModel[]>([]);
     let navigate = useNavigate();
     const [token, setToken] = useLocalStorage('token');
 
@@ -37,9 +37,10 @@ function ListPurchase() {
     }, [purchases.length])
 
     return (
-        <>
-            {
+        <> {console.log(purchases)}
+            { 
                 purchases.map(purchase => (
+
                     <Box m={2} >
                         <Card variant="outlined">
                             <CardContent>
@@ -47,15 +48,15 @@ function ListPurchase() {
                                     Compras
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                    {purchase.nameItems}
+                                    {purchase.items.name}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {purchase.emailBuyer}
+                                    {purchase.buyer.email}
                                 </Typography>               
                              </CardContent>
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>                                
-                                    <Link to={`/deletarcompra/${purchase.emailBuyer}`} className="text-decorator-none">
+                                    <Link to={`/deletarcompra/${purchase.id}`} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size='small' color="secondary">
                                                 deletar

@@ -21,6 +21,8 @@ import store from './store/store';
 import Product from './pages/product/Product';
 import Cart from './pages/cart/Cart';
 import { CartProvider } from './hooks/useCart';
+import Admin from './pages/admin/Admin';
+import RegisterPurchase from './components/purchases/registerPurchase/RegisterPurchase';
 
 function App() {
   return (
@@ -61,6 +63,11 @@ function App() {
             <Route path="/listacompras" element={<ListPurchase />} />
 
             <Route path="/produto1" element={<Product />} />
+
+            <Route path="/admin" element={<Admin />} />
+
+            <Route path="/cadastrarcompra" element={<RegisterPurchase />} />
+
             
           </Routes>
         </div>

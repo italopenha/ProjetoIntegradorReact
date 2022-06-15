@@ -1,11 +1,11 @@
-interface NewProductDTO 
+interface ProductModel 
 {
     id: number;
     name: string;
     price: number;
     image: string 
-    description?: string | null;
+    description: string;
     quantity: number;
 }
 
-export default NewProductDTO;
+export default ProductModel;

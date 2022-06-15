@@ -87,8 +87,11 @@ function RegisterProducts() {
                 <TextField value={product.description} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduct(e)} id="description" label="Descrição" variant="outlined" name="description" margin="normal" fullWidth />
                 <TextField value={product.quantity} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProduct(e)} id="quantity" label="Quantidade" variant="outlined" name="quantity" margin="normal" fullWidth />
 
-                <Button type="submit" variant="contained" color="primary">
+                <Button type="submit" variant="contained" className='btn-reg-admin'>
                     Cadastrar
+                </Button>
+                <Button href='/admin' variant="contained" className='btn-reg-admin back-admin'>
+                    Voltar
                 </Button>
             </form>
         </Container>

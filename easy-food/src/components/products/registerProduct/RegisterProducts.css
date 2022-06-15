@@ -1,3 +1,12 @@
 .topo {
     margin-top: 20px;
 }
+
+.btn-reg-admin {
+    background-color: #406343 !important;
+    color: #ECE7B4 !important;
+}
+
+.back-admin {
+    margin-left: 341px !important;
+}
