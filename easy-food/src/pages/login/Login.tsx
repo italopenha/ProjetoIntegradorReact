@@ -89,7 +89,7 @@ function Login() {
 
                         <Box marginTop={2} textAlign='center'>
                             <Button type='submit' variant='contained' className="btn-entrar">
-                                Logar
+                                Entrar
                             </Button>
                         </Box>
                     </form>

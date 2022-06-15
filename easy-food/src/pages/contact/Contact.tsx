@@ -3,11 +3,12 @@ import './Contact.css';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { Button } from '@mui/material';
 
 function Contact() {
 	return (
 		<body className='container'>
-			<section >
+			<section>
 				<div id="contact">
 					<div className="social">
 
@@ -37,9 +38,8 @@ function Contact() {
 								<input type="text" placeholder="Número de telefone" name='Telefone'/>
 								<input type="email" placeholder="exemplo@email.com" name='E-mail'/>
 								<textarea placeholder="Escreva aqui" name="Mensagem"></textarea>
-
 								<a href="/home">
-								<button className="btn">ENVIAR</button>
+								<Button type='submit' variant='contained' className="btn-enviar">ENVIAR</Button>
 								</a>
 							</form>
 						</div>
