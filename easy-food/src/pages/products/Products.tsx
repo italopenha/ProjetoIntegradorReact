@@ -60,54 +60,46 @@ function Products() {
                             <div className="row">
                                 <div className="slider-items">
                                     <div className="title-categories">
-                                        <h2>Categorias</h2>
+                                        <h2>Nossos Produtos</h2>
                                     </div>
 
                                     <div className="imgs-categories-in">
                                         <div className="imgs-item">
                                             <div className="item">
-                                                <div className="img-main">
-                                                    <a href="/" >
-                                                        <img src="https://i.imgur.com/tg6i5Zx.png" alt="Frutas" />
-                                                    </a>
+                                                <div className="img-main">                                                    
+                                                        <img src="https://i.imgur.com/tg6i5Zx.png" alt="Frutas" />                                                  
                                                     <div className="img-info">
-                                                        <a href="/">Frutas</a>
+                                                        <span>Frutas</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="imgs-item">
                                             <div className="item">
-                                                <div className="img-main">
-                                                    <a href="/">
-                                                        <img src="https://i.imgur.com/ujgxfUU.jpg" alt="Verduras" />
-                                                    </a>
+                                                <div className="img-main">                                            
+                                                        <img src="https://i.imgur.com/ujgxfUU.jpg" alt="Verduras" />                                                  
                                                     <div className="img-info">
-                                                        <a href="/">Verduras</a>
+                                                        <span>Verduras</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="imgs-item">
                                             <div className="item">
-                                                <div className="img-main">
-                                                    <a href="/">
-                                                        <img src="https://i.imgur.com/nseSVu9.png" alt="Legumes" />
-                                                    </a>
+                                                <div className="img-main">                                               
+                                                        <img src="https://i.imgur.com/nseSVu9.png" alt="Legumes" />                                                  
                                                     <div className="img-info">
-                                                        <a href="/">Legumes</a>
+                                                        <span>Legumes</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="imgs-item">
                                             <div className="item">
-                                                <div className="img-main">
-                                                    <a href="/">
-                                                        <img src="https://i.imgur.com/niyNsNl.png" alt="Grãos" />
-                                                    </a>
+                                                <div className="img-main">                                                
+                                                        <img src="https://i.imgur.com/niyNsNl.png" alt="Grãos" />                                               
                                                     <div className="img-info">
-                                                        <a href="/">Grãos</a>
+                                                        <span>Grãos</span>
                                                     </div>
                                                 </div>
                                             </div>

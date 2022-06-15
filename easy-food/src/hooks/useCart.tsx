@@ -62,7 +62,11 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
             }
 
             if (productAlreadyInCart) {
-                const { data: product } = await api.get<NewProductDTO>(`/api/Products/id/${productId}`);
+                const { data: product } = await api.get<NewProductDTO>(`/api/Products/id/${productId}`,{
+                    headers: {
+                        'Authorization': token
+                    }
+                });
 
                 if (product?.quantity && (product.quantity > productAlreadyInCart.quantityItem)) {
                     const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
@@ -108,7 +112,11 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
                 return
             }
 
-            const response = await api.get<NewProductDTO>(`/api/Products/id/${productId}`);
+            const response = await api.get<NewProductDTO>(`/api/Products/id/${productId}`,{
+                headers: {
+                    'Authorization': token
+                }
+            });
             const productAmount = response.data?.quantity ?? 0;
             const stockIsFree = amount > productAmount
 
