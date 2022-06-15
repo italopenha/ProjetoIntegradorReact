@@ -24,7 +24,7 @@ function Admin() {
         <div className="admin-page">
             <Box >
                 <Box className="title-admin" >
-                    Página dos Chefão do site
+                    Funções do Administrador
                 </Box>
                 <Box>
 
