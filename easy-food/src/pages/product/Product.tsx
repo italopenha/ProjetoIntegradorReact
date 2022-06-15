@@ -1,31 +1,32 @@
+import { Button } from '@material-ui/core';
 import './Product.css';
-import { Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 
 function Product() {
 
     return (
         <>
-            <article className='pagproduto'>
-                <section className="parte1">
+
+            <body className='pagproduct'>
+                <section className="parte1product">
                     <ul>
-                        <li className='titulo'>
-                            <p>ABACAXI PEROLA</p>
+                        <li className='tituloproduct'>
+                            ABACAXI PEROLA
                         </li>
-                        <li className='descricao'>
+                        <li className='descricaoproduct'>
                             Abacaxi Perola de extrema qualidade, feito sem agrotóxicos e por um agricultor familiar, da horta dele direto para a sua mesa!
                         </li>
-                        <li className='descricao2'>
+                        <li className='descricaoproduct'>
                             Orgânico: Sim
                         </li>
-                        <li className='descricao3'>
+                        <li className='descricaoproduct'>
                             Contém Glúten: Não
                         </li>
                     </ul>
                 </section>
-                <section className="parte2">
-                    <div className="principal" >
+                <section className="parte2product">
+                    <div className="principalproduct" >
 
-                        <div className="content">
+                        <div className="contentproduct">
                             <div className="slides">
 
                                 <input className="input" type="radio" name="slide" id="slide1" defaultChecked />
@@ -53,31 +54,38 @@ function Product() {
                         </div>
 
                         <div className="navigation">
-                            <label className="bar" htmlFor="slide1"></label>
+                            <label className="bar1" htmlFor="slide1"></label>
                             <label className="bar" htmlFor="slide2"></label>
                             <label className="bar" htmlFor="slide3"></label>
                             <label className="bar" htmlFor="slide4"></label>
                             <label className="bar" htmlFor="slide5"></label>
 
+                            <Button className='botaoproduct'>
+                                Comprar
+                            </Button>
+ 
                         </div>
                     </div>
-                    <Button className='botaoproduct'>
-                            Compre
-                    </Button>
                 </section>
-                <section className='parte3'>
-                    <h3>Beneficios do Abacaxi:</h3>
-                    <p>O abacaxi pérola traz inúmeros benefícios à saúde, como vitaminas C, A e B1, além de magnésio, cobre, manganês, ferro, fibras e bromelina (enzima associada à diminuição da coagulação sanguínea). Por ser pouco calórico (apenas 52 calorias em 100 gramas do produto), essa fruta é muito indicada para dietas de redução de peso.
 
-                        Além disso, seu consumo pode ajudar a evitar problemas nos olhos, ossos, pele e sistema digestivo, e ajuda ainda a aumentar a imunidade e ameniza as dores pós treino. A casca do abacaxi possui tantos nutrientes quanto sua polpa. Portanto, não a desperdice e utilize a casca também no preparo de chás e sucos. Previne dores de garganta e resfriados e é bom para a circulação por conter a enzima bromelina. É indicado também como tempero para amaciar carnes</p>
-                </section>
-                <section className="parte4">
+                <section className='part3product'>
+                    <ul>
+                <li className='titleproduct2'>BENEFICIOS DO ABACAXI</li>
+                        <li className='descproduct2'>O abacaxi pérola traz inúmeros benefícios à saúde, como vitaminas C, A e B1, além de magnésio, cobre, manganês, ferro, fibras e bromelina (enzima associada à diminuição da coagulação sanguínea). 
+                    Por ser pouco calórico (apenas 52 calorias em 100 gramas do produto), essa fruta é muito indicada para dietas de redução de peso.
+                    Além disso, seu consumo pode ajudar a evitar problemas nos olhos, ossos, pele e sistema digestivo, e ajuda ainda a aumentar a imunidade e ameniza as dores pós treino. 
+                        A casca do abacaxi possui tantos nutrientes quanto sua polpa. </li>
+            
+                    </ul>
 
                 </section>
-            </article>
+
+            </body>
+     
+     
+
         </>
-
-
+            
     )
 }
 
