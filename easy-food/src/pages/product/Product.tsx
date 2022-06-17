@@ -67,7 +67,6 @@ function Product() {
                         </div>
                     </div>
                 </section>
-
                 <section className='part3product'>
                     <ul>
                 <li className='titleproduct2'>BENEFICIOS DO ABACAXI</li>

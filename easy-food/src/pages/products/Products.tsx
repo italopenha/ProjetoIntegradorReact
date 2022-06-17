@@ -121,7 +121,10 @@ function Products() {
                         <Box m={2} className="section2" >
                             <Card variant="outlined" className='cardproducts'>
                                 <CardContent className='card-content'>
-                                    <img src={product.image} className="imageProducts"></img>
+                                <a href="/produto1">
+                                        <img src={product.image} className="imageProducts"></img>
+
+                                    </a>
                                     <Typography variant="h5" component="h2" className='nameProducts'>
                                         {product.name}
                                     </Typography>
