@@ -40,43 +40,44 @@ function ListProduct() {
 
     return (
         <>
+        <Box className='alingcards-listproducts'>
             {
                 products.map(product => (
                     <Box m={2} >
-                        <Card variant="outlined">
+                        <Card variant="outlined" className='card-listproducts'>
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
                                     Produtos
                                 </Typography>
-                                <Typography variant="h5" component="h2">
+                                <Typography variant="h5" component="h2" className='nameproduct-list'>
                                     {product.name}
                                 </Typography>
-                                <Typography variant="body2" component="p">
+                                <Typography variant="body2" component="p" className='priceproduct-list'>
                                     {product.price}
                                 </Typography>
-                                <Typography variant="body2" component="p">
+                                <Typography variant="body2" component="p" className='priceproduct-list'>
                                     {product.image}
                                 </Typography>
-                                <Typography variant="body2" component="p">
+                                <Typography variant="body2" component="p" className='priceproduct-list'>
                                     {product.description}
                                 </Typography>
-                                <Typography variant="body2" component="p">
+                                <Typography variant="body2" component="p" className='priceproduct-list'>
                                     {product.quantity}
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Box display="flex" justifyContent="center" mb={1.5}>
+                                <Box display="flex" mb={1.5} className='alingbtn-listproducts'>
 
                                     <Link to={`/cadastrarproduto/${product.id}`} className="text-decorator-none" >
                                         <Box mx={1}>
-                                            <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                                            <Button variant="contained"  className='btn-updateproducts' >
                                                 Atualizar
                                             </Button>
                                         </Box>
                                     </Link>
                                     <Link to={`/deletarproduto/${product.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" size='small' color="secondary">
+                                            <Button variant="contained" className='btn-deleteproducts'>
                                                 Deletar
                                             </Button>
                                         </Box>
@@ -87,6 +88,7 @@ function ListProduct() {
                     </Box>
                 ))
             }
+         </Box>   
         </>
     )
 }
