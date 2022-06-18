@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .topo {
     margin-top: 100px;
 }
 
+.btn-cadastro-produtos {
+    font-family: 'Raleway' !important;
+    color: #406343;
+    font-weight: bold !important;
+}
+
 .btn-reg-admin {
-    background-color: #406343 !important;
+    background-color: #32502E !important;
     color: #ECE7B4 !important;
+    font-family: 'Raleway' !important;
+    font-weight: bold !important;
 }
 
 .back-admin {
-    margin-left: 341px !important;
+    margin-left: 345px !important;
 }

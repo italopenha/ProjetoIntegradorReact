@@ -1,3 +1,37 @@
-.teste {
-    font-size: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.alinhar-cards-lista-compras{
+    display: flex;
+    flex-direction: inline-flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.card-lista-compras {
+    background-color: #ECE7B4 !important;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.txt-lista-compras-nome {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway' !important;
+    font-size: 30px !important;
+    color:  #32502E !important;
+}
+
+.txt-lista-compras-email {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Raleway' !important;
+    font-size: 15px !important;
+    color:  #32502E !important;
+}
+
+.btn-deletar {
+    background-color: #b11212 !important;
+    color: #ECE7B4 !important;
+    font-family: 'Raleway' !important;
+    font-weight: bold !important;
 }
