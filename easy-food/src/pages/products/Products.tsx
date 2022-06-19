@@ -132,7 +132,7 @@ function Products() {
                                         R$ {product.price}
                                     </Typography>
                                     <Typography variant="body2" component="p" className='priceProducts'>
-                                       Quantidade: {product.quantity}
+                                       Em estoque: {product.quantity}
                                     </Typography>
                                 </CardContent>
                                 <Box display="flex" justifyContent="center" mb={1.5} className="alingbtn">

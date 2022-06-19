@@ -32,7 +32,7 @@ function App() {
         <CartProvider>
 
         <Navbar />
-        <div style={{ minHeight: '100vh' }}>
+        <div style={{ minHeight: '60vh' }}>
           <Routes>
             <Route path="/" element={<Home />} />
 

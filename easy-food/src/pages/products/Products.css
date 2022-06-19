@@ -153,10 +153,19 @@
 }
 
 .img-products img{
-    height: 1000px;
+    height: 1000px;    
+}
+
+.imageProducts:hover {
+    opacity: .8;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-moz-transform: scale(1.1);
+    transition: all 0.3s ease-out;
 }
 
 .alinhamento{
+    background-color: #F3EFCC;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

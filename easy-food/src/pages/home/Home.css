@@ -13,7 +13,7 @@
     width: 500%;
     margin: 0;
     Left: 0;
-    animation: 20s slider infinite;
+    animation: 20s slider ease-out infinite;
 }
 
 .slider .imgBx img {
@@ -21,10 +21,9 @@
     float: left;
 }
 
-
-
 @keyframes slider {
-    0% {
+
+    0% {        
         left: 0;
     }
 
@@ -84,7 +83,7 @@
 }
 
 .txtresume p {
-    font-family: 'Raleway'!important;
+    font-family: 'Raleway' !important;
     color: #32502E;
     font-size: 20px !important;
     text-align: center;
@@ -96,7 +95,7 @@
 .gridContainer1 {
     background: #F3EFCC;
     background-image: url(https://i.imgur.com/wsWzdGe.png), url(https://i.imgur.com/stMfrer.png);
-    background-position: left top, right top ;
+    background-position: left top, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 20%;
     align-items: center;
@@ -141,7 +140,7 @@
 }
 
 .image__img {
-    
+
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -201,7 +200,7 @@
 }
 
 .txt-video p {
-    font-family: 'Raleway'!important;
+    font-family: 'Raleway' !important;
     color: #32502E;
     font-size: 20px !important;
     text-align: center;

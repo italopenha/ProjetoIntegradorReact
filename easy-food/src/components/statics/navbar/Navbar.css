@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-a {
+.nav-list li a {
     display: flex;
     color: #ECE7B4;
     text-decoration: none;

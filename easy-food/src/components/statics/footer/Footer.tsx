@@ -24,7 +24,7 @@ function Footer() {
     return (
         <>
             <footer id='footer_principal'>
-                <section>
+                <section className='section-footer' >
                     <article className='footer-texto'>
                         <h2>CONTATO</h2>
                         <p>Horário de atendimento: 08 - 17 hrs</p>
