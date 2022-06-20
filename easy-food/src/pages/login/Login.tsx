@@ -77,12 +77,12 @@ function Login() {
                         <Typography variant='h3' gutterBottom component='h3' align='center' className='seja-bem-vindo'>Bem-Vindo(a)!</Typography>
                         <Typography variant='h6' gutterBottom component='h6' align='center' className='digite-email-senha'>Digite seu e-mail e senha para entrar</Typography>
                         
-                        <TextField
+                        <TextField className="formulariologin"
                             value={authenticationDTO.email}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='email' label='email' variant='outlined' color="success" name='email' margin='normal' fullWidth/>
 
-                        <TextField
+                        <TextField className="formulariologin"
                             value={authenticationDTO.password}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='password' label='senha' variant='outlined' color="success" name='password' margin='normal' type='password' fullWidth />

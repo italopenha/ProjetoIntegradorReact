@@ -9,6 +9,7 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    display: block;
 }
 .logo-register-user{
     display: flex;
@@ -39,4 +40,37 @@
 
 .tipoUsuario{
     padding-top: 15px !important; 
+}
+
+.tipoUsuario2{
+    padding-top: 15px !important; 
+}
+
+@media (max-width: 800px) {
+    .img-register-user{
+        display: none;
+    }
+
+    .cadastre-se {
+      
+        font-size: 25px !important;
+        color: #32502E !important;
+        margin-top: 20px !important;
+        margin-left: -80px !important;
+        width: 200px;
+    }
+
+    .formulariocadastro {
+        margin-left: -100px !important;
+        width: 250px !important;
+    }
+
+    .tipoUsuario {
+        margin-left: -100px !important;
+        width: 250px !important
+    } 
+    .btn-cadastrar{
+        margin-left: 60px !important;
+    }
+
 }

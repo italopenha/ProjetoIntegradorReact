@@ -50,14 +50,27 @@
 }
 
 /* Second part, the images */
-.grid-images {
+.grid-images1 {
     width: 100%;
     background-color: #ECE7B4;
     display: flex ;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    display: block;
 }
+
+.grid-images2 {
+    width: 100%;
+    background-color: #ECE7B4;
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display:block ;
+    
+}
+
 
 .fluxograma-sobre {
     display: flex;
@@ -212,4 +225,90 @@ width: 117px;
 transform: rotate(12deg);
 left: -110px;
 top: 20px;
+}
+@media (min-width: 999px) {
+    .grid-images2{
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .grid-container-1 {
+        width: 100%;
+    }
+
+    .grid-container-1-b{
+        width: 100%;
+    }
+
+    .grid-container-2{
+        width: 100%;
+    }
+
+    .grid-container-1 {
+        background-size: 12%;
+    }
+
+    .logo {
+        margin-top: 30px;
+        width: 300px;
+    }
+    .sobre-a-easy-food {
+        padding: 30px 20px 30px;
+        font-family: 'Raleway' !important;
+        font-size: 30px !important;
+        color: #32502E;
+        display: flex;
+        justify-content: center;
+        font-weight: bold !important;
+    }
+
+    .txt-sobre p {
+        color: #32502E !important;
+        font-family: 'Raleway' !important;
+        font-size: 16px !important;
+        display: flex !important;
+        justify-content: center !important;
+        text-align: center !important;
+        line-height: 24px !important;
+        letter-spacing: 3px !important;
+        padding: 16px;
+        margin-left: -50px;
+    }
+
+    .grid-images1{
+        display: none;
+    }
+
+    .grid-images2 .fluxogramas {
+        display: flex;
+       flex-wrap: wrap;
+        width: 585px;
+        height: 585px;
+        margin-left: -155px;
+        margin-top: -600px;
+    }
+    .grid-images2 .fluxogramas4 {
+        display: flex;
+        flex-wrap: wrap;
+         width: 585px;
+         height: 585px;
+         margin-left: -600px;
+         margin-top: 550px;
+    }
+
+    .txt-sobre .txt-sobreabout{
+        margin-left: -75px;
+    }
+
+    .o-que-defendemos{
+        text-align: center;
+    }
+
+    .txt-o-que-defendemos{
+        margin-left: -60px;
+    }
+
+    .cx-esq-interno {
+        display: none;
+    }
 }

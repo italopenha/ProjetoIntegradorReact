@@ -55,4 +55,50 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    display: block;
 }
+
+@media (max-width: 800px) {
+    .img-login {
+        display:none !important;
+    }
+
+    .logo-register-user{
+     margin-top: 85px;
+    }
+    
+    .seja-bem-vindo {
+        margin-left: -140px !important;
+        font-size: 20px !important;
+    }
+    .digite-email-senha {
+        margin-left: -140px !important;
+        margin-top: 35px !important;
+        align-items: center !important;
+        font-size: 17px !important;
+    }
+
+    .formulariologin {
+        margin-left: -195px !important;
+        width: 250px !important;
+    }
+
+    .btn-entrar {
+        margin-left: -130px !important;
+    }
+
+    .nao-tem-uma-conta {
+        margin-left: -145px !important;
+        font-size: 15px !important;
+        color: #32502E;
+    }
+    .btn-cadastre-se {
+ 
+        margin-left: 10px !important;
+        font-size: 15px !important;
+        color: #32502E;
+        width: 100px !important;
+        margin-bottom: 285px !important;
+    }
+}
+

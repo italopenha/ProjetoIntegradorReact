@@ -173,4 +173,41 @@
     font-family: 'Raleway' !important;
     font-weight: bold !important;
   }
-  
+  @media (max-width: 1000px) {
+    .contact-box {
+    background-color:#32502E;
+    width: 350px;
+    height: 500px;
+    margin-left: -5px;
+    align-items: center;
+    }
+
+    .c-heading .contato-c{
+        font-size: 20px !important;
+        margin-top: 10px;
+        color: #32502E;
+    }
+
+    .c-heading .contato-p{
+        font-size: 15px !important;
+    }
+
+    .c-inputs input{
+        width: 300px;
+    }
+    .c-inputs textarea{
+        width: 300px !important;
+    }
+    .c-heading h1 {
+        font-size: 30px !important;
+        margin-top: -10px;
+        color: #32502E;
+    }
+
+    .btn-enviar {
+        background-color: #32502E !important;
+        color: #ECE7B4 !important;
+        font-family: 'Raleway' !important;
+        font-weight: bold !important;
+      }
+}

@@ -45,14 +45,23 @@ function Aboutus() {
                 </Grid>
 
 
-                <Grid item className='grid-images'>
+                <Grid item className='grid-images1'>
                     <Box className='fluxograma-sobre'>
                         <img src="https://i.imgur.com/dKegUPU.png" alt="fluxograma-1" className='fluxogramas' />
                     
                         <img src="https://i.imgur.com/ChnouKf.png" alt="fluxograma-2" className='fluxogramas' />
+
                     </Box>
                 </Grid>
 
+                <Grid item className='grid-images2'>
+                    <Box className='fluxograma-sobre'>
+                        <img src="https://i.imgur.com/41e5Y2S.png"  alt="fluxograma-1" className='fluxogramas' />
+                    
+                        <img src= "https://i.imgur.com/M7OLoe2.png"  alt="fluxograma-2" className='fluxogramas4' />
+
+                    </Box>
+                </Grid>
                 <Grid item className='grid-container-1-b'>
                     <Grid item xs={2}>
                         <Box>
@@ -62,7 +71,7 @@ function Aboutus() {
 
                     <Grid item xs={8} className="txt-sobre">
                         <Box padding={5} >
-                            <p>
+                            <p className='txt-sobreabout'>
                                 Segundo estudos, o preço de venda dos produtos nas plataformas de e-commerce é 43,7% superior ao dos distribuidores nas lojas tradicionais. Como resultado, os produtores podem vender seus produtos de maior qualidade diretamente para consumidores e ganhar mais, ao mesmo tempo, os compradores recebem produtos mais saudáveis e com preços mais baixos em relação aos das lojas físicas.
                             </p>
                         </Box>

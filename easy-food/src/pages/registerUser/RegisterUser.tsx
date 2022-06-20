@@ -108,23 +108,23 @@ function RegisterUser () {
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='cadastre-se'>Cadastre-se</Typography>
                         
-                        <TextField
+                        <TextField className="formulariocadastro"
                             value={userRegisterDTO.email}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='email' label='Email' variant='outlined' color="success" name='email' margin='normal' type='email' fullWidth />
 
-                        <TextField
+                        <TextField className="formulariocadastro"
                             value={userRegisterDTO.name}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='name' label='Nome' variant='outlined' color="success" name='name' margin='normal' fullWidth />
                         
-                        <TextField
+                        <TextField className="formulariocadastro"
                             value={userRegisterDTO.password}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='password' label='Senha' variant='outlined' color="success" name='password' margin='normal' type='password' fullWidth />
                         
                         
-                        <TextField
+                        <TextField className="formulariocadastro"
                             value={confirmPassword} 
                             onChange={(e: ChangeEvent<HTMLInputElement>) => confirmPasswordHandle(e)}
                             id='confirmPassword' label='Confirmar Senha' variant='outlined' color="success" name='confirmPassword' margin='normal' type='password' fullWidth />
@@ -132,7 +132,7 @@ function RegisterUser () {
                         <FormControl 
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             variant="outlined" color="success" fullWidth  className="tipoUsuario">
-                            <InputLabel htmlFor="outlined-age-native-simple"  className="tipoUsuario">Tipo de Usuário</InputLabel>
+                            <InputLabel htmlFor="outlined-age-native-simple"  className="tipoUsuario2">Tipo de Usuário</InputLabel>
                             <Select
                             value={userRegisterDTO.type}
                             native
@@ -148,7 +148,7 @@ function RegisterUser () {
                             </Select>
                         </FormControl>
 
-                        <TextField
+                        <TextField className="formulariocadastro"
                             value={userRegisterDTO.address}
                             onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id='address' label='Endereço' variant='outlined' color="success" name='address' margin='normal' fullWidth/>
