@@ -58,7 +58,7 @@ function Footer() {
                         </ul>
                     </article>
                     <article className='icons'>
-                            <a href='https://grillogui.github.io/PortfolioGrupo3DotNet1/index.html'>
+                            <a href='https://grillogui.github.io/PortfolioGrupo3DotNet1/' target="_blank">
                                 <FolderIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
                             </a>
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">

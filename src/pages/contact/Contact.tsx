@@ -13,7 +13,7 @@ function Contact() {
 			<section>
 				<div id="contact">
 					<div className="social">
-						<a href="https://grillogui.github.io/PortfolioGrupo3DotNet1/index.html" target="_blank" rel="noopener noreferrer">
+						<a href="https://grillogui.github.io/PortfolioGrupo3DotNet1/" target="_blank" rel="noopener noreferrer">
 							<FolderIcon style={{ fontSize: 40, color: "#ECE7B4" }} />
 						</a>
 

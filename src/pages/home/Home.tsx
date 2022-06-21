@@ -6,6 +6,9 @@ import './Home.css'
 function Home() {
     return (
         <>
+        <body className='home-principal'>
+            
+        
             <div className="slider">
                 <div className="imgBx">
                     <img src="https://i.imgur.com/Yr9h6qJ.png" alt="legumes" />
@@ -131,7 +134,7 @@ function Home() {
                 </Grid>
 
             </Grid>
-
+        </body>
         </>
     );
 }
