@@ -5,8 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom';
-
-
+import FolderIcon from '@mui/icons-material/Folder';
 
 function Footer() {
 
@@ -59,14 +58,14 @@ function Footer() {
                         </ul>
                     </article>
                     <article className='icons'>
+                            <a href='https://grillogui.github.io/PortfolioGrupo3DotNet1/index.html'>
+                                <FolderIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
+                            </a>
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                 <FacebookIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
                             </a>
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                                 <InstagramIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
-                            </a>
-                            <a href="https://www.linkedin.com/school/" target="_blank" rel="noopener noreferrer">
-                                <LinkedInIcon style={{ fontSize: 40, color: "#ECE7B4"}} />
                             </a>
                     </article>
                 </section>
