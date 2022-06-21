@@ -37,6 +37,7 @@
 #menu li a{
     color:#ECE7B4;
     font-family:'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 #menu li a:hover{

@@ -1,11 +1,11 @@
 import React from 'react';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FolderIcon from '@mui/icons-material/Folder';
 import './Footer.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom';
-import FolderIcon from '@mui/icons-material/Folder';
+
 
 function Footer() {
 
