@@ -13,7 +13,7 @@ function Aboutus() {
                     <img src="https://i.imgur.com/JAuoaOn.png" alt="logo-easy-food" className='logo' />
 
                     <Box>
-                        <Typography className="sobre-a-easy-food">Sobre a Easy Food</Typography>
+                        <Typography className="sobre-a-easy-food">Sobre a EasyFood</Typography>
                     </Box>
 
                     <Box className="arabesco">
@@ -38,7 +38,7 @@ function Aboutus() {
                         </Box>
                         <Box padding={2} >
                             <p>
-                                Foi assim que nasceu a Easy Food, uma plataforma facilitadora e pautada no modelo de Desenvolvimento Social Sustentável, responsável por conectar os agricultores familiares aos consumidores.
+                                Foi assim que nasceu a EasyFood, uma plataforma facilitadora e pautada no modelo de Desenvolvimento Social Sustentável, responsável por conectar os agricultores familiares aos consumidores.
                             </p>
                         </Box>
                     </Grid>

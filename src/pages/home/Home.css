@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+.home-principal{
+    overflow: hidden;
+}
 /* Carousel */
 .slider {
     overflow: hidden;

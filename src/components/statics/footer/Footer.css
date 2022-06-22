@@ -37,6 +37,7 @@
 #menu li a{
     color:#ECE7B4;
     font-family:'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 #menu li a:hover{
@@ -76,7 +77,7 @@
         font-size: 15px;
         display: flex;
         justify-content: center;
-        margin-left: 72px;
+        margin-left: 74px;
         
     }
 
@@ -86,12 +87,12 @@
         
     }
     #menu li {
-        font-size: 15px;
-       margin-left: -28px;
+        font-size: 13px;
+       margin-left: -30px;
     }
 
     .footer-texto h2{
-        font-size: 18px;
-        margin-left: -70px;
+        font-size: 16px;
+        margin-left: -72px;
     } 
 }
