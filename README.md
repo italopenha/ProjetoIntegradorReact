@@ -1,4 +1,6 @@
-<img src="https://i.imgur.com/PAg5G5V.png" width="1080px">
+<td align=”center”>
+<img src="https://i.imgur.com/PAg5G5V.png" height=500px width="1000px">
+ </td>
 
 <br> 
 
@@ -22,7 +24,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
     <tr>
         <td align=”center”>
             <a href="https://github.com/grillogui">
-                <img src="https://avatars.githubusercontent.com/u/102301437?v=4" width="250px">
+                <img src="https://i.imgur.com/V7YNBNh.jpg"  width="250px">
                     <sub>
                         <b> Guilherme Grillo </b>
                     </sub>
@@ -31,7 +33,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
 <td align=”center”>
             <a href="https://github.com/italopenha">
-                <img src="https://avatars.githubusercontent.com/u/101754876?v=4" width="250px">
+                <img src="https://i.imgur.com/Hbw1HMX.jpg" height="160px" width="370px">
                     <sub>
                         <b> Ítalo Penha </b>
                     </sub>
@@ -39,7 +41,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
         </td>
 <td align=”center”>
             <a href="https://github.com/joce-line">
-                <img src="https://avatars.githubusercontent.com/u/101748092?v=4" width="280px">
+                <img src="https://i.imgur.com/ewBbwhZ.jpg" width="260px">
                     <sub>
                         <b> Joceline Gutierrez </b>
                     </sub>
@@ -48,7 +50,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
 <td align=”center”>
             <a href="https://github.com/CaptainSilvaBr">
-                <img src="https://avatars.githubusercontent.com/u/46821803?v=4" width="250px">
+                <img src="https://i.imgur.com/04oPnST.jpg" height="160px" width="270px">
                     <sub>
                         <b> Kaique Silva  </b>
                     </sub>
@@ -56,7 +58,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
         </td>
 <td align=”center”>
             <a href="https://github.com/karolcoliveira">
-                <img src="https://avatars.githubusercontent.com/u/102301464?v=4" width="280px">
+                <img src="https://i.imgur.com/opRMnxp.jpg" width="280px">
                     <sub>
                         <b> Karolyne Oliveira  </b>
                     </sub>
@@ -64,7 +66,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
         </td>
 <td align=”center”>
             <a href="https://github.com/Leonardo-SARTO-Conselheiro">
-                <img src="https://user-images.githubusercontent.com/88943268/162409830-a90464a4-ea48-4236-8d10-f0f3be671cd3.jpeg" width="280px">
+                <img src="https://i.imgur.com/732HgVt.jpg" width="280px">
                     <sub>
                         <b> Leonardo Sarto  </b>
                     </sub>
@@ -72,7 +74,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
         </td>
 <td align=”center”>
             <a href="https://github.com/MatheusBrazolin">
-                <img src="https://avatars.githubusercontent.com/u/102265721?v=4" width="280px">
+                <img src="https://i.imgur.com/0fG7crN.jpg" height="160px" width="280px">
                     <sub>
                         <b> Matheus Brazolin  </b>
                     </sub>
@@ -87,6 +89,8 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
 Link com mais informações de todos os participantes: <https://grillogui.github.io/PortfolioGrupo3DotNet1/>
 
+<section class="Site">
+<h2> :clapper: Site </h2>
 <p> Acesse o site por <a href="https://easyfood-one.vercel.app/"> aqui </a> </p>
 
 <br>
